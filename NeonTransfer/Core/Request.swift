@@ -26,14 +26,26 @@ struct Request {
     
     // MARK: REQUEST
     static func getToken(params : [String : AnyObject]?, callType: CallType,
-                        successBlock : (NSMutableArray? -> ()),
+                        successBlock : ([AnyObject]? -> ()),
                         failure failureBlock : (String? -> ())) {
         Alamofire.request(isGet(callType) ? .GET : .POST, getServerURL(callType), parameters:params)
             .validate()
             .responseJSON { response in
                 switch response.result {
                 case .Success:
-                    print("é ele que a gente quer")
+                    switch callType {
+                        case .Token:
+                            break
+                        case .SendMoney:
+                            break
+                        case .Transfer:
+                            if let results = response.result.value as? [AnyObject] {
+                                var transfers = [TransfersModel]()
+                                results.forEach({transfers.append(TransfersModel(dictionary: $0 as! [String : AnyObject]))})
+                                successBlock(transfers)
+                            }
+                            break
+                        }
                     break
                 case .Failure(let error):
                     print(error)
