@@ -34,8 +34,8 @@ class RequestSendMoney: NSObject {
                     
                 case .Failure(let error):
                     
-                    failureBlock("não vai dar não")
-                    print(error)
+                    failureBlock(error.description)
+                    print("não vai dar não")
                 }
         }
     }
