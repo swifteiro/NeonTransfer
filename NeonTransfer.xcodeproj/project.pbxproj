@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5989C02506C2EC0EF4CCAA0E /* Pods_NeonTransferTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */; };
 		849725C01D6510420060A7A1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849725BF1D6510420060A7A1 /* Request.swift */; };
+		849725C61D6516E40060A7A1 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849725C31D6516E40060A7A1 /* Contact.swift */; };
+		849725C71D6516E40060A7A1 /* TransfersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849725C51D6516E40060A7A1 /* TransfersModel.swift */; };
 		84B19E361D64A153007EC485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E2E1D64A153007EC485 /* LaunchScreen.storyboard */; };
 		84B19E371D64A153007EC485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E2F1D64A153007EC485 /* Main.storyboard */; };
 		84B19E381D64A153007EC485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B19E301D64A153007EC485 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EAF6668D31C610AD26B801 /* Pods-NeonTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.debug.xcconfig"; sourceTree = "<group>"; };
 		849725BF1D6510420060A7A1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		849725C31D6516E40060A7A1 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		849725C51D6516E40060A7A1 /* TransfersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransfersModel.swift; sourceTree = "<group>"; };
 		84B19E2E1D64A153007EC485 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B19E2F1D64A153007EC485 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84B19E301D64A153007EC485 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,9 +108,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		849725C11D6516E40060A7A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				849725C21D6516E40060A7A1 /* ContactModel */,
+				849725C41D6516E40060A7A1 /* TransfersModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		849725C21D6516E40060A7A1 /* ContactModel */ = {
+			isa = PBXGroup;
+			children = (
+				849725C31D6516E40060A7A1 /* Contact.swift */,
+			);
+			path = ContactModel;
+			sourceTree = "<group>";
+		};
+		849725C41D6516E40060A7A1 /* TransfersModel */ = {
+			isa = PBXGroup;
+			children = (
+				849725C51D6516E40060A7A1 /* TransfersModel.swift */,
+			);
+			path = TransfersModel;
+			sourceTree = "<group>";
+		};
 		84B19E2C1D64A153007EC485 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				849725C11D6516E40060A7A1 /* Model */,
 				84B19E2D1D64A153007EC485 /* Storyboard */,
 				84B19E301D64A153007EC485 /* ViewController.swift */,
 			);
@@ -469,8 +499,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849725C61D6516E40060A7A1 /* Contact.swift in Sources */,
 				84B19E391D64A153007EC485 /* AppDelegate.swift in Sources */,
 				849725C01D6510420060A7A1 /* Request.swift in Sources */,
+				849725C71D6516E40060A7A1 /* TransfersModel.swift in Sources */,
 				84B19E381D64A153007EC485 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
