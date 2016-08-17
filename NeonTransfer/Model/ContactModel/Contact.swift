@@ -24,24 +24,28 @@ class Contact: Deserializable {
     }
     
     //MARK: FromJSONFile
-    class func jsonParsingFromFile() -> [Contact] {
+    class func jsonParsingFromFile() -> NSMutableArray {
         let path = (NSBundle.mainBundle().pathForResource("contacts_json", ofType: "json"))
-        guard let triedPath = path else { return [Contact]() }
+        guard let triedPath = path else { return NSMutableArray() }
         var data: NSData?
         do { data = try NSData(contentsOfFile: triedPath as String, options: NSDataReadingOptions.DataReadingMapped) }
         catch { data = nil }
-        guard let dataJson = data else { return [Contact]() }
-        var arrayContacts = [Contact]()
+        guard let dataJson = data else { return NSMutableArray() }
+        let arrayContacts = NSMutableArray()
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(dataJson, options: .AllowFragments)
-            if let dictData = json.objectForKey("contacts") as? [Contact] {
-                dictData.forEach({arrayContacts.append($0)})
+            if let dictData = json.objectForKey("contacts") as? NSArray {
+                for obj in dictData {
+                    var contact :Contact?
+                    contact <-- obj
+                    arrayContacts.addObject(contact!)
+                }
                 return arrayContacts
             }
         } catch {
             NSLog("error serializing JSON: \(error)")
         }
         
-        return [Contact]()
+        return NSMutableArray()
     }
 }
