@@ -20,6 +20,7 @@
 		E6CBFE171D64B06A00BB976D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6CBFE161D64B06A00BB976D /* Info.plist */; };
 		E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */; };
 		E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */; };
+		E6CBFE201D64CAB400BB976D /* TransfersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */; };
 		E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */; };
 		E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9E01D64A55900A8E57A /* APIUrls.swift */; };
 		E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */; };
@@ -68,6 +69,7 @@
 		E6CBFE161D64B06A00BB976D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSendMoney.swift; sourceTree = "<group>"; };
 		E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGetTransfers.swift; sourceTree = "<group>"; };
+		E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransfersModel.swift; path = Model/TransfersModel/TransfersModel.swift; sourceTree = "<group>"; };
 		E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerateToken.swift; sourceTree = "<group>"; };
 		E6FEC9E01D64A55900A8E57A /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +176,7 @@
 		84DD89EB1D64973B00E1E4E3 /* NeonTransfer */ = {
 			isa = PBXGroup;
 			children = (
+				E6CBFE1C1D64CA1B00BB976D /* Model */,
 				84B19E2C1D64A153007EC485 /* Base */,
 				84B19E311D64A153007EC485 /* Core */,
 				84B19E321D64A153007EC485 /* Others */,
@@ -211,6 +214,30 @@
 				15F59224C80BA94FB8DBEBA0 /* Pods-NeonTransferUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6CBFE1C1D64CA1B00BB976D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6CBFE1E1D64CA8500BB976D /* TransfersModel */,
+				E6CBFE1D1D64CA7D00BB976D /* ContactModel */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E6CBFE1D1D64CA7D00BB976D /* ContactModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ContactModel;
+			sourceTree = "<group>";
+		};
+		E6CBFE1E1D64CA8500BB976D /* TransfersModel */ = {
+			isa = PBXGroup;
+			children = (
+				E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */,
+			);
+			name = TransfersModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +511,7 @@
 				E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */,
 				84B19E381D64A153007EC485 /* ViewController.swift in Sources */,
 				E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */,
+				E6CBFE201D64CAB400BB976D /* TransfersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vm.NeonTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -625,6 +654,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vm.NeonTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};

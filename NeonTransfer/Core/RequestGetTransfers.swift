@@ -9,6 +9,7 @@
 import UIKit
 
 import Alamofire
+import JSONHelper
 
 class RequestGetTransfers: NSObject {
 
@@ -29,6 +30,18 @@ class RequestGetTransfers: NSObject {
                     
                     //TODO: OBJ
                     print("é ele que a gente quer")
+                    let arrayTransfers = NSMutableArray()
+                    if response.result.value?.count > 0 {
+                        if let objTransfers = response.result.value as? NSArray {
+                            for obj in objTransfers {
+                                let objDictionary = obj as? NSDictionary
+                                var transfer :TransfersModel?
+                                transfer <-- objDictionary
+                                arrayTransfers.addObject(transfer!)
+                            }
+                        }
+                    }
+                    successBlock(arrayTransfers)
                     
                 case .Failure(let error):
                     
