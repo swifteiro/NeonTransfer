@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5989C02506C2EC0EF4CCAA0E /* Pods_NeonTransferTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */; };
 		84B19E361D64A153007EC485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E2E1D64A153007EC485 /* LaunchScreen.storyboard */; };
 		84B19E371D64A153007EC485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E2F1D64A153007EC485 /* Main.storyboard */; };
 		84B19E381D64A153007EC485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B19E301D64A153007EC485 /* ViewController.swift */; };
@@ -15,7 +16,13 @@
 		84B19E3B1D64A153007EC485 /* contacts_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E351D64A153007EC485 /* contacts_json.json */; };
 		84DD8A021D64973B00E1E4E3 /* NeonTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A011D64973B00E1E4E3 /* NeonTransferTests.swift */; };
 		84DD8A0D1D64973B00E1E4E3 /* NeonTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */; };
-		D4FE56DEE20DE1B7A93C0545 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D556EEB616217037DED01E /* Pods_NeonTransfer.framework */; };
+		C2567EF940B219A216175025 /* Pods_NeonTransferUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4EB170167375B83AB3821 /* Pods_NeonTransferUITests.framework */; };
+		E6CBFE171D64B06A00BB976D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6CBFE161D64B06A00BB976D /* Info.plist */; };
+		E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */; };
+		E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */; };
+		E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */; };
+		E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9E01D64A55900A8E57A /* APIUrls.swift */; };
+		E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12B632EA08F1CDBE9D63A408 /* Pods-NeonTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		15F59224C80BA94FB8DBEBA0 /* Pods-NeonTransferUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1F4A79C90F1FDE61213E8E5B /* Pods-NeonTransferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F190DA2FE88624E50632A65 /* Pods-NeonTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.release.xcconfig"; sourceTree = "<group>"; };
+		43F4EB170167375B83AB3821 /* Pods_NeonTransferUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransferUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82EAF6668D31C610AD26B801 /* Pods-NeonTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.debug.xcconfig"; sourceTree = "<group>"; };
 		84B19E2E1D64A153007EC485 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B19E2F1D64A153007EC485 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84B19E301D64A153007EC485 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +62,14 @@
 		84DD8A081D64973B00E1E4E3 /* NeonTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeonTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonTransferUITests.swift; sourceTree = "<group>"; };
 		84DD8A0E1D64973B00E1E4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87D556EEB616217037DED01E /* Pods_NeonTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB123A7912A5BA6C8AB89F29 /* Pods-NeonTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.debug.xcconfig"; sourceTree = "<group>"; };
+		9E50BDFAEE733D30524BFCF1 /* Pods-NeonTransferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E59FA228D9789C625E392186 /* Pods-NeonTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6CBFE161D64B06A00BB976D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSendMoney.swift; sourceTree = "<group>"; };
+		E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGetTransfers.swift; sourceTree = "<group>"; };
+		E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerateToken.swift; sourceTree = "<group>"; };
+		E6FEC9E01D64A55900A8E57A /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4FE56DEE20DE1B7A93C0545 /* Pods_NeonTransfer.framework in Frameworks */,
+				E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5989C02506C2EC0EF4CCAA0E /* Pods_NeonTransferTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,27 +93,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2567EF940B219A216175025 /* Pods_NeonTransferUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		61E3C3EA91735F4EB072BCBA /* Frameworks */ = {
+		5D5B31E571A6D00D78835B4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				87D556EEB616217037DED01E /* Pods_NeonTransfer.framework */,
+				C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */,
+				478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */,
+				43F4EB170167375B83AB3821 /* Pods_NeonTransferUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6DAFFA53955A893C59CCB202 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EB123A7912A5BA6C8AB89F29 /* Pods-NeonTransfer.debug.xcconfig */,
-				12B632EA08F1CDBE9D63A408 /* Pods-NeonTransfer.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		84B19E2C1D64A153007EC485 /* Base */ = {
@@ -118,6 +131,10 @@
 		84B19E311D64A153007EC485 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */,
+				E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */,
+				E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */,
+				E6FEC9E01D64A55900A8E57A /* APIUrls.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -139,8 +156,8 @@
 				84DD8A001D64973B00E1E4E3 /* NeonTransferTests */,
 				84DD8A0B1D64973B00E1E4E3 /* NeonTransferUITests */,
 				84DD89EA1D64973B00E1E4E3 /* Products */,
-				6DAFFA53955A893C59CCB202 /* Pods */,
-				61E3C3EA91735F4EB072BCBA /* Frameworks */,
+				89F491C90015BF4E75D1D90A /* Pods */,
+				5D5B31E571A6D00D78835B4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +177,7 @@
 				84B19E2C1D64A153007EC485 /* Base */,
 				84B19E311D64A153007EC485 /* Core */,
 				84B19E321D64A153007EC485 /* Others */,
+				E6CBFE161D64B06A00BB976D /* Info.plist */,
 			);
 			path = NeonTransfer;
 			sourceTree = "<group>";
@@ -182,6 +200,19 @@
 			path = NeonTransferUITests;
 			sourceTree = "<group>";
 		};
+		89F491C90015BF4E75D1D90A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82EAF6668D31C610AD26B801 /* Pods-NeonTransfer.debug.xcconfig */,
+				3F190DA2FE88624E50632A65 /* Pods-NeonTransfer.release.xcconfig */,
+				9E50BDFAEE733D30524BFCF1 /* Pods-NeonTransferTests.debug.xcconfig */,
+				1F4A79C90F1FDE61213E8E5B /* Pods-NeonTransferTests.release.xcconfig */,
+				E59FA228D9789C625E392186 /* Pods-NeonTransferUITests.debug.xcconfig */,
+				15F59224C80BA94FB8DBEBA0 /* Pods-NeonTransferUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,12 +220,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DD8A111D64973B00E1E4E3 /* Build configuration list for PBXNativeTarget "NeonTransfer" */;
 			buildPhases = (
-				EE115241C6CD0917B0DCB969 /* Check Pods Manifest.lock */,
+				C99CE2AA822292FC4CD7BE24 /* [CP] Check Pods Manifest.lock */,
 				84DD89E51D64973B00E1E4E3 /* Sources */,
 				84DD89E61D64973B00E1E4E3 /* Frameworks */,
 				84DD89E71D64973B00E1E4E3 /* Resources */,
-				382CD7CE91A70B41784D6C3F /* Embed Pods Frameworks */,
-				328C5727A7FECC1DA05155BC /* Copy Pods Resources */,
+				BCCA0CF48396EE4B9194D38F /* [CP] Embed Pods Frameworks */,
+				13412F9AFC670CDC2AF001D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DD8A141D64973B00E1E4E3 /* Build configuration list for PBXNativeTarget "NeonTransferTests" */;
 			buildPhases = (
+				07E3A70EB050C95039C91872 /* [CP] Check Pods Manifest.lock */,
 				84DD89F91D64973B00E1E4E3 /* Sources */,
 				84DD89FA1D64973B00E1E4E3 /* Frameworks */,
 				84DD89FB1D64973B00E1E4E3 /* Resources */,
+				093AE4B8C2EFF7F887A52701 /* [CP] Embed Pods Frameworks */,
+				E23370650594126E411DD55A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DD8A171D64973B00E1E4E3 /* Build configuration list for PBXNativeTarget "NeonTransferUITests" */;
 			buildPhases = (
+				7BB617755A702CEBC6A0DEED /* [CP] Check Pods Manifest.lock */,
 				84DD8A041D64973B00E1E4E3 /* Sources */,
 				84DD8A051D64973B00E1E4E3 /* Frameworks */,
 				84DD8A061D64973B00E1E4E3 /* Resources */,
+				BE07B31AD1EC19C25E9C4ECD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +289,7 @@
 				TargetAttributes = {
 					84DD89E81D64973B00E1E4E3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3GK4EVGD54;
 					};
 					84DD89FC1D64973B00E1E4E3 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -292,6 +329,7 @@
 				84B19E361D64A153007EC485 /* LaunchScreen.storyboard in Resources */,
 				84B19E3A1D64A153007EC485 /* Assets.xcassets in Resources */,
 				84B19E3B1D64A153007EC485 /* contacts_json.json in Resources */,
+				E6CBFE171D64B06A00BB976D /* Info.plist in Resources */,
 				84B19E371D64A153007EC485 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,14 +351,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		328C5727A7FECC1DA05155BC /* Copy Pods Resources */ = {
+		07E3A70EB050C95039C91872 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		093AE4B8C2EFF7F887A52701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13412F9AFC670CDC2AF001D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,14 +396,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		382CD7CE91A70B41784D6C3F /* Embed Pods Frameworks */ = {
+		7BB617755A702CEBC6A0DEED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCA0CF48396EE4B9194D38F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,19 +426,49 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EE115241C6CD0917B0DCB969 /* Check Pods Manifest.lock */ = {
+		BE07B31AD1EC19C25E9C4ECD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C99CE2AA822292FC4CD7BE24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E23370650594126E411DD55A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -365,8 +478,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */,
+				E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */,
 				84B19E391D64A153007EC485 /* AppDelegate.swift in Sources */,
+				E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */,
 				84B19E381D64A153007EC485 /* ViewController.swift in Sources */,
+				E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,30 +604,33 @@
 		};
 		84DD8A121D64973B00E1E4E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB123A7912A5BA6C8AB89F29 /* Pods-NeonTransfer.debug.xcconfig */;
+			baseConfigurationReference = 82EAF6668D31C610AD26B801 /* Pods-NeonTransfer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NeonTransfer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Netshoes.NeonTransfer;
+				PRODUCT_BUNDLE_IDENTIFIER = vm.NeonTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		84DD8A131D64973B00E1E4E3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12B632EA08F1CDBE9D63A408 /* Pods-NeonTransfer.release.xcconfig */;
+			baseConfigurationReference = 3F190DA2FE88624E50632A65 /* Pods-NeonTransfer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = NeonTransfer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Netshoes.NeonTransfer;
+				PRODUCT_BUNDLE_IDENTIFIER = vm.NeonTransfer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		84DD8A151D64973B00E1E4E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E50BDFAEE733D30524BFCF1 /* Pods-NeonTransferTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NeonTransferTests/Info.plist;
@@ -523,6 +643,7 @@
 		};
 		84DD8A161D64973B00E1E4E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4A79C90F1FDE61213E8E5B /* Pods-NeonTransferTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = NeonTransferTests/Info.plist;
@@ -535,6 +656,7 @@
 		};
 		84DD8A181D64973B00E1E4E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59FA228D9789C625E392186 /* Pods-NeonTransferUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NeonTransferUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -546,6 +668,7 @@
 		};
 		84DD8A191D64973B00E1E4E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F59224C80BA94FB8DBEBA0 /* Pods-NeonTransferUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = NeonTransferUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
