@@ -16,10 +16,10 @@ enum CallType {
 }
 
 struct APIUrls {
-    static let serverAPI = "http://processoseletivoneon.azurewebsites.net/"
+    static let serverAPI     = "http://processoseletivoneon.azurewebsites.net/"
     static let generateToken = "GenerateToken"
-    static let sendMoney = "SendMoney"
-    static let getTransfers = "GetTransfers"
+    static let sendMoney     = "SendMoney"
+    static let getTransfers  = "GetTransfers"
 }
 
 struct Request {
