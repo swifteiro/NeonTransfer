@@ -9,6 +9,7 @@ pod 'JSONHelper'
 pod 'Realm'
 pod 'SVProgressHUD'
 pod 'SDWebImage'
+pod 'Alamofire'
 
 end
 
