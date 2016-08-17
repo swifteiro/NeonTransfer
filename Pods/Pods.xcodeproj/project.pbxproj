@@ -11,6 +11,7 @@
 		03A5DC68DE7D44296062102DABB07424 /* RLMMigration.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD2007708F48F4905238C3C77D3C9B06 /* RLMMigration.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
 		04B782CB91B0C1364222C656B2BCF73C /* transact_log_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7D6404AE8713621C3A6AA75A60F97901 /* transact_log_handler.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
 		05E6E1FDCA460ACBBD966224024A3A97 /* RLMListBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D85AD776F2C2A3548BD831E8AD8164 /* RLMListBase.h */; };
+		0677B2D0DC079179803791F8433D6750 /* Pods-NeonTransferTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8795BECBC0DDF611DE25AD1A04A709E3 /* Pods-NeonTransferTests-dummy.m */; };
 		090E1F44A3751954CD1FD02EBEB7EDB6 /* RLMObjectBase.mm in Sources */ = {isa = PBXBuildFile; fileRef = 31750C48689741EB4090FCBDFB65A690 /* RLMObjectBase.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
 		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE462EEB698F129C9BF9DD63FC94CD /* Error.swift */; };
 		0D47C875A1C7211013F19ABDFE12FE93 /* RLMArray_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 176E97763E84A1A7F02C4C218798C630 /* RLMArray_Private.h */; };
@@ -53,8 +54,8 @@
 		3FB472469A1F5A2760140D622E89BD69 /* object_schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D86B29E9DD51FC8052789842C8B92D87 /* object_schema.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
 		3FC1834083530ACE124F2D467CEB06E5 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = AACAD62F610D086CD83D6E433462AD60 /* SDImageCache.m */; };
 		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DF47340B561CC5EB9E5C535991439D /* Manager.swift */; };
+		40DDDF145C0426B87BE12C7901697DEE /* Pods-NeonTransferTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 671ACC16158DBD2ADFF6A4B3A4E945BF /* Pods-NeonTransferTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		413FCF0D5E1037781993839C2D971623 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 598E101195FCB0A03A59FC26F21EBCCE /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41FF460A797BAC0868F4F1E637686AE6 /* Pods-NeonTransferTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 671ACC16158DBD2ADFF6A4B3A4E945BF /* Pods-NeonTransferTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4271646E43EE4392849749F45E950E37 /* RLMRealm_Dynamic.h in Headers */ = {isa = PBXBuildFile; fileRef = 594BD26539B3708A0E14999DD0705A04 /* RLMRealm_Dynamic.h */; };
 		4383571F66C707ED729D0072E6FE5823 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96E9C37E86A28F25BD0FADFC7437DF56 /* SVProgressHUD.bundle */; };
 		442264A938962DDCA815E59335AB931B /* RLMListBase.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 27D85AD776F2C2A3548BD831E8AD8164 /* RLMListBase.h */; };
@@ -120,7 +121,6 @@
 		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB3FBEBB4B2292E19A11B700AA3459 /* Alamofire.swift */; };
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A233D1824B7E3A7E822B946F834319EC /* Foundation.framework */; };
 		935DDB250BA080EEB851E99B675CFD3B /* RLMProperty_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = C51259202D9047888310AA3811A99FD6 /* RLMProperty_Private.h */; };
-		93C191E802A42DD81082D67A855DCE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A233D1824B7E3A7E822B946F834319EC /* Foundation.framework */; };
 		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F817A3E584F38EBD7FDD037310E58124 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9649DB766409B83E032D87C273D0C248 /* RLMSchema.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 2B49817483885FA0AC07EBFD61C5E457 /* RLMSchema.h */; };
 		9D22AF106FE65C5F02761022691B99D3 /* RLMSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8150D719A14CA493C623FF7D6773D8D0 /* RLMSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
@@ -195,7 +195,6 @@
 		F33B436AF25C4959BF983D2CACECEE8C /* RLMObservation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00E98349B425A0C9AC47D39E25F0CB86 /* RLMObservation.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.2\"' -D__ASSERTMACROS__"; }; };
 		F4538A236C739548F37C493800758758 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 21E097DE775C693541F73D345560266D /* UIView+WebCacheOperation.m */; };
 		F4B536825F7D4C0C51C5F57A2D6ECCD8 /* RLMMigration.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 16F55F50F8B2AEA9C41BDC04932DFC31 /* RLMMigration.h */; };
-		F4DD64D1564CEC6B2AEBF15E131BF8AD /* Pods-NeonTransferTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8795BECBC0DDF611DE25AD1A04A709E3 /* Pods-NeonTransferTests-dummy.m */; };
 		F4FB9A011D64820AC35FA0FCB0030E1D /* RLMProperty.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = DB213C502D7FF0F1D207AC18CDBDC12C /* RLMProperty.h */; };
 		F5EA23E42037D00E74286BB36337BE8C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 39271502C40FF42460D1FC701C249E7C /* SVProgressHUD.m */; };
 		F69C8C0E8AD7E52783359FE8261931DD /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9371906F23EDFC38BCBDE3CBA32E61A3 /* SDWebImageDownloader.m */; };
@@ -203,9 +202,24 @@
 		F82E5E1D65BAB1C4A6B86E9634A7B008 /* RLMObjectSchema_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = D6A40D9A890E3AE9E7DFA56B1A7C5BE1 /* RLMObjectSchema_Private.h */; };
 		FA0F1D8678DE921F8E981BEF6467E3C3 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E6BB210FC44B14B792541A9ABCACB22 /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBCA4BC296EF901F051F29F36E4D0661 /* Pods-NeonTransfer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28648A1015FA713A1CE15FF521640962 /* Pods-NeonTransfer-dummy.m */; };
+		FC27E190BBF2A23664E7A810A5F1B138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A233D1824B7E3A7E822B946F834319EC /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0986227AC856DE131D90189068556509 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
+		};
+		557C3F48553A99BF40849A7F4D1B8AF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3223C20C2847E497FADA20461C04C178;
+			remoteInfo = JSONHelper;
+		};
 		B1B069E0D269C8158D7D8E069AD9DE57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -539,6 +553,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CAB5A6CBE5CBFCA17C560DFCD78D8FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC27E190BBF2A23664E7A810A5F1B138 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A54FD392702EB340110E76A9292B1D87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,14 +574,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B1DAABD94E791DC1CE8998F5E44E35EB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93C191E802A42DD81082D67A855DCE29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -987,6 +1001,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		23FF294D03EFEED55E6AB74EB2ADF1F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DDDF145C0426B87BE12C7901697DEE /* Pods-NeonTransferTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46FAADDE529283A04BFA7EEC8D2F9707 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1051,14 +1073,6 @@
 				CA462C37084BA56DC994E4593BB3F04A /* RLMResults_Private.h in Headers */,
 				69DDA46E9899E1EA6A8212546B2E560F /* RLMSchema.h in Headers */,
 				261EA6B4DE31659AC77A9CB1CD9245F3 /* RLMSchema_Private.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D2DD91ABD05B945C68207038584952A4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41FF460A797BAC0868F4F1E637686AE6 /* Pods-NeonTransferTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1135,6 +1149,25 @@
 			productReference = 3FE77DB24E16929F13F8A373CE49243A /* SDWebImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0C66FE3505BB516D43860E37AD3C92FB /* Pods-NeonTransferTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E94CDC6C86494C6BADCAA8F00F47FF /* Build configuration list for PBXNativeTarget "Pods-NeonTransferTests" */;
+			buildPhases = (
+				B76416D8AC195E0E58F80F45BBFC8064 /* Sources */,
+				5CAB5A6CBE5CBFCA17C560DFCD78D8FC /* Frameworks */,
+				23FF294D03EFEED55E6AB74EB2ADF1F4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4837248D7F53A9D3B1811271D4244F02 /* PBXTargetDependency */,
+				B8CFF3B0B4D125F4AD86A612A7A3825A /* PBXTargetDependency */,
+			);
+			name = "Pods-NeonTransferTests";
+			productName = "Pods-NeonTransferTests";
+			productReference = 425B0607271D5C90EF92A1585CDEB130 /* Pods_NeonTransferTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3223C20C2847E497FADA20461C04C178 /* JSONHelper */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C20D4939DC2FDD5A97EE87064EA99CAF /* Build configuration list for PBXNativeTarget "JSONHelper" */;
@@ -1150,23 +1183,6 @@
 			name = JSONHelper;
 			productName = JSONHelper;
 			productReference = 95B021F10001C9C7F573E3848364861D /* JSONHelper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		7951D3CE7733D4B1EC158EBCF878FA4C /* Pods-NeonTransferTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7844DA38AE12E65CFCBA688D3ADBE8C9 /* Build configuration list for PBXNativeTarget "Pods-NeonTransferTests" */;
-			buildPhases = (
-				EE5A6C5277D0E7188B76F6E5DB2AFFEC /* Sources */,
-				B1DAABD94E791DC1CE8998F5E44E35EB /* Frameworks */,
-				D2DD91ABD05B945C68207038584952A4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-NeonTransferTests";
-			productName = "Pods-NeonTransferTests";
-			productReference = 425B0607271D5C90EF92A1585CDEB130 /* Pods_NeonTransferTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
@@ -1269,7 +1285,7 @@
 				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
 				3223C20C2847E497FADA20461C04C178 /* JSONHelper */,
 				FB3DB2C1C9A84FAE5A633A3F8689B69A /* Pods-NeonTransfer */,
-				7951D3CE7733D4B1EC158EBCF878FA4C /* Pods-NeonTransferTests */,
+				0C66FE3505BB516D43860E37AD3C92FB /* Pods-NeonTransferTests */,
 				07AD4B8F124FA543EE4C4BBD52B1B0CF /* Pods-NeonTransferUITests */,
 				C58113D7FAAB36EDB756489AB2735A4A /* Realm */,
 				0B2216FA9ED18EAC3BA987132C0BAA42 /* SDWebImage */,
@@ -1437,11 +1453,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE5A6C5277D0E7188B76F6E5DB2AFFEC /* Sources */ = {
+		B76416D8AC195E0E58F80F45BBFC8064 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4DD64D1564CEC6B2AEBF15E131BF8AD /* Pods-NeonTransferTests-dummy.m in Sources */,
+				0677B2D0DC079179803791F8433D6750 /* Pods-NeonTransferTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1460,11 +1476,23 @@
 			target = 0B2216FA9ED18EAC3BA987132C0BAA42 /* SDWebImage */;
 			targetProxy = E423AA7E3521B02217D1380B3DDA2499 /* PBXContainerItemProxy */;
 		};
+		4837248D7F53A9D3B1811271D4244F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = 0986227AC856DE131D90189068556509 /* PBXContainerItemProxy */;
+		};
 		B5A2C859351E5AF2B9B013F49DB7399E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JSONHelper;
 			target = 3223C20C2847E497FADA20461C04C178 /* JSONHelper */;
 			targetProxy = C1C5426941F10CE9BCA6D78227229F96 /* PBXContainerItemProxy */;
+		};
+		B8CFF3B0B4D125F4AD86A612A7A3825A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JSONHelper;
+			target = 3223C20C2847E497FADA20461C04C178 /* JSONHelper */;
+			targetProxy = 557C3F48553A99BF40849A7F4D1B8AF0 /* PBXContainerItemProxy */;
 		};
 		E4811CECC947EA8DDC35C16007C01319 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1543,39 +1571,6 @@
 			};
 			name = Release;
 		};
-		19417A283175E9999D003949253B6A97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D5EAC3FAA13793D8410534FA3FFB73D /* Pods-NeonTransferTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NeonTransferTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NeonTransferTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		32AD5F8918CA8B349E4671410FA624C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7A8147AD01D8055C1355C496D3A6D6B9 /* Alamofire.xcconfig */;
@@ -1640,39 +1635,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		457BDACD4C1EDB8C7243DE551623285A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B25009929FCB53CEBD17B984E98EACD0 /* Pods-NeonTransferTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-NeonTransferTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_NeonTransferTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1750,6 +1712,39 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		5EC1119E266F9364544DD6C3CB69956C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25009929FCB53CEBD17B984E98EACD0 /* Pods-NeonTransferTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NeonTransferTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NeonTransferTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		75218111E718FACE36F771E8ABECDB62 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1834,6 +1829,40 @@
 				PRODUCT_NAME = Realm;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9D07318FBE2639C832D5096C6A3B8CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5EAC3FAA13793D8410534FA3FFB73D /* Pods-NeonTransferTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-NeonTransferTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NeonTransferTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2100,11 +2129,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7844DA38AE12E65CFCBA688D3ADBE8C9 /* Build configuration list for PBXNativeTarget "Pods-NeonTransferTests" */ = {
+		83E94CDC6C86494C6BADCAA8F00F47FF /* Build configuration list for PBXNativeTarget "Pods-NeonTransferTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				19417A283175E9999D003949253B6A97 /* Debug */,
-				457BDACD4C1EDB8C7243DE551623285A /* Release */,
+				9D07318FBE2639C832D5096C6A3B8CAA /* Debug */,
+				5EC1119E266F9364544DD6C3CB69956C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

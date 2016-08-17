@@ -22,6 +22,8 @@
 		E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */; };
 		E6CBFE201D64CAB400BB976D /* TransfersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */; };
 		E6CBFE221D64DC4700BB976D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE211D64DC4700BB976D /* Contact.swift */; };
+		E6CBFE2B1D64ECDB00BB976D /* ContactTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE2A1D64ECDB00BB976D /* ContactTest.swift */; };
+		E6CBFE2E1D64F0C100BB976D /* TransferTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE2D1D64F0C100BB976D /* TransferTest.swift */; };
 		E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */; };
 		E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9E01D64A55900A8E57A /* APIUrls.swift */; };
 		E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */; };
@@ -72,6 +74,8 @@
 		E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGetTransfers.swift; sourceTree = "<group>"; };
 		E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransfersModel.swift; path = Model/TransfersModel/TransfersModel.swift; sourceTree = "<group>"; };
 		E6CBFE211D64DC4700BB976D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/ContactModel/Contact.swift; sourceTree = "<group>"; };
+		E6CBFE2A1D64ECDB00BB976D /* ContactTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTest.swift; sourceTree = "<group>"; };
+		E6CBFE2D1D64F0C100BB976D /* TransferTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferTest.swift; sourceTree = "<group>"; };
 		E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerateToken.swift; sourceTree = "<group>"; };
 		E6FEC9E01D64A55900A8E57A /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +194,8 @@
 		84DD8A001D64973B00E1E4E3 /* NeonTransferTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6CBFE2C1D64F0B800BB976D /* TransferTest */,
+				E6CBFE291D64ECD000BB976D /* ContactTest */,
 				84DD8A011D64973B00E1E4E3 /* NeonTransferTests.swift */,
 				84DD8A031D64973B00E1E4E3 /* Info.plist */,
 			);
@@ -241,6 +247,22 @@
 				E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */,
 			);
 			name = TransfersModel;
+			sourceTree = "<group>";
+		};
+		E6CBFE291D64ECD000BB976D /* ContactTest */ = {
+			isa = PBXGroup;
+			children = (
+				E6CBFE2A1D64ECDB00BB976D /* ContactTest.swift */,
+			);
+			path = ContactTest;
+			sourceTree = "<group>";
+		};
+		E6CBFE2C1D64F0B800BB976D /* TransferTest */ = {
+			isa = PBXGroup;
+			children = (
+				E6CBFE2D1D64F0C100BB976D /* TransferTest.swift */,
+			);
+			path = TransferTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -523,7 +545,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6CBFE2B1D64ECDB00BB976D /* ContactTest.swift in Sources */,
 				84DD8A021D64973B00E1E4E3 /* NeonTransferTests.swift in Sources */,
+				E6CBFE2E1D64F0C100BB976D /* TransferTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
