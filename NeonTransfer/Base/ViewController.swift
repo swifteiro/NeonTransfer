@@ -13,15 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        RequestGetTransfers.GetTransfers({ (array) in
-            
-            print(array)
-            
-            }) { (string) in
-                
-                //
-        }
+        let array = Contact.jsonParsingFromFile()
+        print(array)
     }
 
     override func didReceiveMemoryWarning() {

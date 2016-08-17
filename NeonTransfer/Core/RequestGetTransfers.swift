@@ -40,8 +40,8 @@ class RequestGetTransfers: NSObject {
                                 arrayTransfers.addObject(transfer!)
                             }
                         }
+                        successBlock(arrayTransfers)
                     }
-                    successBlock(arrayTransfers)
                     
                 case .Failure(let error):
                     

@@ -21,6 +21,7 @@
 		E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */; };
 		E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */; };
 		E6CBFE201D64CAB400BB976D /* TransfersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */; };
+		E6CBFE221D64DC4700BB976D /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE211D64DC4700BB976D /* Contact.swift */; };
 		E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */; };
 		E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9E01D64A55900A8E57A /* APIUrls.swift */; };
 		E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */; };
@@ -70,6 +71,7 @@
 		E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSendMoney.swift; sourceTree = "<group>"; };
 		E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGetTransfers.swift; sourceTree = "<group>"; };
 		E6CBFE1F1D64CAB400BB976D /* TransfersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransfersModel.swift; path = Model/TransfersModel/TransfersModel.swift; sourceTree = "<group>"; };
+		E6CBFE211D64DC4700BB976D /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contact.swift; path = Model/ContactModel/Contact.swift; sourceTree = "<group>"; };
 		E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerateToken.swift; sourceTree = "<group>"; };
 		E6FEC9E01D64A55900A8E57A /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +230,7 @@
 		E6CBFE1D1D64CA7D00BB976D /* ContactModel */ = {
 			isa = PBXGroup;
 			children = (
+				E6CBFE211D64DC4700BB976D /* Contact.swift */,
 			);
 			name = ContactModel;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 				E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */,
 				84B19E391D64A153007EC485 /* AppDelegate.swift in Sources */,
 				E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */,
+				E6CBFE221D64DC4700BB976D /* Contact.swift in Sources */,
 				84B19E381D64A153007EC485 /* ViewController.swift in Sources */,
 				E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */,
 				E6CBFE201D64CAB400BB976D /* TransfersModel.swift in Sources */,
