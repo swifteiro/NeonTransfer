@@ -1,0 +1,23 @@
+PODS:
+  - JSONHelper (2.1.0)
+  - Realm (1.0.2):
+    - Realm/Headers (= 1.0.2)
+  - Realm/Headers (1.0.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - JSONHelper
+  - Realm
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC CHECKSUMS:
+  JSONHelper: 684a9ffd73578f370c0a02197319a97e37120124
+  Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+COCOAPODS: 0.39.0

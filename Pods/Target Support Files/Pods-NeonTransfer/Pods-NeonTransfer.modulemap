@@ -1,0 +1,6 @@
+framework module Pods_NeonTransfer {
+  umbrella header "Pods-NeonTransfer-umbrella.h"
+
+  export *
+  module * { export * }
+}
