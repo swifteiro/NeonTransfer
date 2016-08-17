@@ -7,14 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84DD89ED1D64973B00E1E4E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD89EC1D64973B00E1E4E3 /* AppDelegate.swift */; };
-		84DD89EF1D64973B00E1E4E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD89EE1D64973B00E1E4E3 /* ViewController.swift */; };
-		84DD89F21D64973B00E1E4E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DD89F01D64973B00E1E4E3 /* Main.storyboard */; };
-		84DD89F41D64973B00E1E4E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DD89F31D64973B00E1E4E3 /* Assets.xcassets */; };
-		84DD89F71D64973B00E1E4E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DD89F51D64973B00E1E4E3 /* LaunchScreen.storyboard */; };
 		84DD8A021D64973B00E1E4E3 /* NeonTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A011D64973B00E1E4E3 /* NeonTransferTests.swift */; };
 		84DD8A0D1D64973B00E1E4E3 /* NeonTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */; };
-		84DD8A241D649C1000E1E4E3 /* contacts_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 84DD8A231D649C1000E1E4E3 /* contacts_json.json */; };
 		D4FE56DEE20DE1B7A93C0545 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D556EEB616217037DED01E /* Pods_NeonTransfer.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,19 +32,12 @@
 /* Begin PBXFileReference section */
 		12B632EA08F1CDBE9D63A408 /* Pods-NeonTransfer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.release.xcconfig"; sourceTree = "<group>"; };
 		84DD89E91D64973B00E1E4E3 /* NeonTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeonTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84DD89EC1D64973B00E1E4E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84DD89EE1D64973B00E1E4E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84DD89F11D64973B00E1E4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		84DD89F31D64973B00E1E4E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		84DD89F61D64973B00E1E4E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		84DD89F81D64973B00E1E4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DD89FD1D64973B00E1E4E3 /* NeonTransferTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeonTransferTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DD8A011D64973B00E1E4E3 /* NeonTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonTransferTests.swift; sourceTree = "<group>"; };
 		84DD8A031D64973B00E1E4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DD8A081D64973B00E1E4E3 /* NeonTransferUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeonTransferUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonTransferUITests.swift; sourceTree = "<group>"; };
 		84DD8A0E1D64973B00E1E4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84DD8A231D649C1000E1E4E3 /* contacts_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts_json.json; sourceTree = "<group>"; };
 		87D556EEB616217037DED01E /* Pods_NeonTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB123A7912A5BA6C8AB89F29 /* Pods-NeonTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,9 +110,6 @@
 		84DD89EB1D64973B00E1E4E3 /* NeonTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				84DD8A1E1D649B7600E1E4E3 /* Base */,
-				84DD8A1F1D649B7B00E1E4E3 /* Core */,
-				84DD8A201D649B7F00E1E4E3 /* Others */,
 			);
 			path = NeonTransfer;
 			sourceTree = "<group>";
@@ -146,50 +130,6 @@
 				84DD8A0E1D64973B00E1E4E3 /* Info.plist */,
 			);
 			path = NeonTransferUITests;
-			sourceTree = "<group>";
-		};
-		84DD8A1E1D649B7600E1E4E3 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				84DD89EE1D64973B00E1E4E3 /* ViewController.swift */,
-				84DD8A211D649B8F00E1E4E3 /* Storyboard */,
-			);
-			name = Base;
-			sourceTree = "<group>";
-		};
-		84DD8A1F1D649B7B00E1E4E3 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		84DD8A201D649B7F00E1E4E3 /* Others */ = {
-			isa = PBXGroup;
-			children = (
-				84DD8A221D649BF900E1E4E3 /* MockedFiles */,
-				84DD89F81D64973B00E1E4E3 /* Info.plist */,
-				84DD89EC1D64973B00E1E4E3 /* AppDelegate.swift */,
-				84DD89F31D64973B00E1E4E3 /* Assets.xcassets */,
-			);
-			name = Others;
-			sourceTree = "<group>";
-		};
-		84DD8A211D649B8F00E1E4E3 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				84DD89F51D64973B00E1E4E3 /* LaunchScreen.storyboard */,
-				84DD89F01D64973B00E1E4E3 /* Main.storyboard */,
-			);
-			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		84DD8A221D649BF900E1E4E3 /* MockedFiles */ = {
-			isa = PBXGroup;
-			children = (
-				84DD8A231D649C1000E1E4E3 /* contacts_json.json */,
-			);
-			name = MockedFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,10 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DD89F71D64973B00E1E4E3 /* LaunchScreen.storyboard in Resources */,
-				84DD89F41D64973B00E1E4E3 /* Assets.xcassets in Resources */,
-				84DD8A241D649C1000E1E4E3 /* contacts_json.json in Resources */,
-				84DD89F21D64973B00E1E4E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,8 +311,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DD89EF1D64973B00E1E4E3 /* ViewController.swift in Sources */,
-				84DD89ED1D64973B00E1E4E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,25 +344,6 @@
 			targetProxy = 84DD8A091D64973B00E1E4E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		84DD89F01D64973B00E1E4E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84DD89F11D64973B00E1E4E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		84DD89F51D64973B00E1E4E3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84DD89F61D64973B00E1E4E3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		84DD8A0F1D64973B00E1E4E3 /* Debug */ = {
