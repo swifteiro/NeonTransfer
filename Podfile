@@ -15,6 +15,9 @@ end
 
 target 'NeonTransferTests' do
 
+pod 'JSONHelper'
+pod 'Alamofire'
+
 end
 
 target 'NeonTransferUITests' do

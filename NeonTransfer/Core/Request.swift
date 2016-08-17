@@ -41,7 +41,7 @@ struct Request {
                         case .Transfer:
                             if let results = response.result.value as? [AnyObject] {
                                 var transfers = [TransfersModel]()
-                                results.forEach({transfers.append(TransfersModel(dictionary: $0 as! [String : AnyObject]))})
+                                results.forEach({if $0 is [String : AnyObject] { transfers.append(TransfersModel(dictionary: $0 as! [String : AnyObject])) }})
                                 successBlock(transfers)
                             }
                             break
