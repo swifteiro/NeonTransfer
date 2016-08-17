@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5989C02506C2EC0EF4CCAA0E /* Pods_NeonTransferTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */; };
+		849725C01D6510420060A7A1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849725BF1D6510420060A7A1 /* Request.swift */; };
 		84B19E361D64A153007EC485 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E2E1D64A153007EC485 /* LaunchScreen.storyboard */; };
 		84B19E371D64A153007EC485 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E2F1D64A153007EC485 /* Main.storyboard */; };
 		84B19E381D64A153007EC485 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B19E301D64A153007EC485 /* ViewController.swift */; };
@@ -18,10 +19,6 @@
 		84DD8A0D1D64973B00E1E4E3 /* NeonTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */; };
 		C2567EF940B219A216175025 /* Pods_NeonTransferUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4EB170167375B83AB3821 /* Pods_NeonTransferUITests.framework */; };
 		E6CBFE171D64B06A00BB976D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6CBFE161D64B06A00BB976D /* Info.plist */; };
-		E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */; };
-		E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */; };
-		E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */; };
-		E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FEC9E01D64A55900A8E57A /* APIUrls.swift */; };
 		E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +46,7 @@
 		43F4EB170167375B83AB3821 /* Pods_NeonTransferUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransferUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478E125D856487DFCBA568F6 /* Pods_NeonTransferTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82EAF6668D31C610AD26B801 /* Pods-NeonTransfer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransfer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer.debug.xcconfig"; sourceTree = "<group>"; };
+		849725BF1D6510420060A7A1 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		84B19E2E1D64A153007EC485 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B19E2F1D64A153007EC485 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		84B19E301D64A153007EC485 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,10 +64,6 @@
 		C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59FA228D9789C625E392186 /* Pods-NeonTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6CBFE161D64B06A00BB976D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestSendMoney.swift; sourceTree = "<group>"; };
-		E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGetTransfers.swift; sourceTree = "<group>"; };
-		E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestGenerateToken.swift; sourceTree = "<group>"; };
-		E6FEC9E01D64A55900A8E57A /* APIUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,10 +125,7 @@
 		84B19E311D64A153007EC485 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				E6FEC9DE1D64A42A00A8E57A /* RequestGenerateToken.swift */,
-				E6CBFE181D64B1C300BB976D /* RequestSendMoney.swift */,
-				E6CBFE1A1D64B3A600BB976D /* RequestGetTransfers.swift */,
-				E6FEC9E01D64A55900A8E57A /* APIUrls.swift */,
+				849725BF1D6510420060A7A1 /* Request.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -478,12 +469,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6FEC9E11D64A55900A8E57A /* APIUrls.swift in Sources */,
-				E6FEC9DF1D64A42A00A8E57A /* RequestGenerateToken.swift in Sources */,
 				84B19E391D64A153007EC485 /* AppDelegate.swift in Sources */,
-				E6CBFE191D64B1C300BB976D /* RequestSendMoney.swift in Sources */,
+				849725C01D6510420060A7A1 /* Request.swift in Sources */,
 				84B19E381D64A153007EC485 /* ViewController.swift in Sources */,
-				E6CBFE1B1D64B3A600BB976D /* RequestGetTransfers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
