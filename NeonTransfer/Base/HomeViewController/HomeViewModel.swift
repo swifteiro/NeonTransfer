@@ -54,4 +54,10 @@ class HomeViewModel: NSObject, HomePresentation {
     func setupImageViewProfile(img :UIImageView) {
         img.image = UIImage.init(named: "img_profile")?.circleMask
     }
+    
+    func setupButtonHome(button: UIButton, title: String, textColor: UIColor) {
+        button.setTitle(title, forState: UIControlState.Normal)
+        button.titleLabel?.textColor = textColor
+        button.layer.cornerRadius = 20.0
+    }
 }

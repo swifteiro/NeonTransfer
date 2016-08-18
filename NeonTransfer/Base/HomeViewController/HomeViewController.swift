@@ -40,6 +40,8 @@ class HomeViewController: UIViewController {
         homeProtocol.setBackgraoundColor(self.backgroundColor, view: self)
         homeProtocol.setupViewProfile(self.backgroundColor, view: self.viewProfile)
         homeProtocol.setupImageViewProfile(self.imgProfile)
+        homeProtocol.setupButtonHome(self.buttonSendMoney, title: "ENVIAR DINHEIRO", textColor: self.backgroundColor)
+        homeProtocol.setupButtonHome(self.buttonHistory, title: "HISTÓRICO DE ENVIOS", textColor: self.backgroundColor)
     }
     
     @IBAction func goToSendMoney(sender: AnyObject) {
