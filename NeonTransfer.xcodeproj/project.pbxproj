@@ -23,6 +23,12 @@
 		84B19E3B1D64A153007EC485 /* contacts_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E351D64A153007EC485 /* contacts_json.json */; };
 		84DD8A0D1D64973B00E1E4E3 /* NeonTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */; };
 		C2567EF940B219A216175025 /* Pods_NeonTransferUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43F4EB170167375B83AB3821 /* Pods_NeonTransferUITests.framework */; };
+		E69E27DC1D6626E900963773 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27DB1D6626E900963773 /* SendMoneyViewController.swift */; };
+		E69E27DE1D66270700963773 /* SendMoneyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27DD1D66270700963773 /* SendMoneyProtocol.swift */; };
+		E69E27E01D66271A00963773 /* SendMoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27DF1D66271A00963773 /* SendMoneyViewModel.swift */; };
+		E69E27E31D66279000963773 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27E21D66279000963773 /* ContactCell.swift */; };
+		E69E27E51D66284C00963773 /* ContactCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27E41D66284C00963773 /* ContactCellProtocol.swift */; };
+		E69E27E71D66286000963773 /* ContactCellModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27E61D66286000963773 /* ContactCellModelView.swift */; };
 		E6CBFE171D64B06A00BB976D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6CBFE161D64B06A00BB976D /* Info.plist */; };
 		E74A624E106AC61A77CF3CD7 /* Pods_NeonTransfer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +79,12 @@
 		9E50BDFAEE733D30524BFCF1 /* Pods-NeonTransferTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C11235E9A9965CC5D06B4D05 /* Pods_NeonTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59FA228D9789C625E392186 /* Pods-NeonTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E69E27DB1D6626E900963773 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
+		E69E27DD1D66270700963773 /* SendMoneyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyProtocol.swift; sourceTree = "<group>"; };
+		E69E27DF1D66271A00963773 /* SendMoneyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewModel.swift; sourceTree = "<group>"; };
+		E69E27E21D66279000963773 /* ContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		E69E27E41D66284C00963773 /* ContactCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellProtocol.swift; sourceTree = "<group>"; };
+		E69E27E61D66286000963773 /* ContactCellModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellModelView.swift; sourceTree = "<group>"; };
 		E6CBFE161D64B06A00BB976D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +182,7 @@
 			children = (
 				849725C11D6516E40060A7A1 /* Model */,
 				848E4D0F1D651F23001FB6C4 /* HomeViewController */,
+				E69E27DA1D6626CE00963773 /* SendMoneyViewController */,
 				84B19E2D1D64A153007EC485 /* Storyboard */,
 			);
 			path = Base;
@@ -265,6 +278,27 @@
 				15F59224C80BA94FB8DBEBA0 /* Pods-NeonTransferUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E69E27DA1D6626CE00963773 /* SendMoneyViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E69E27DD1D66270700963773 /* SendMoneyProtocol.swift */,
+				E69E27DB1D6626E900963773 /* SendMoneyViewController.swift */,
+				E69E27DF1D66271A00963773 /* SendMoneyViewModel.swift */,
+				E69E27E11D66277000963773 /* ContactCell */,
+			);
+			path = SendMoneyViewController;
+			sourceTree = "<group>";
+		};
+		E69E27E11D66277000963773 /* ContactCell */ = {
+			isa = PBXGroup;
+			children = (
+				E69E27E41D66284C00963773 /* ContactCellProtocol.swift */,
+				E69E27E21D66279000963773 /* ContactCell.swift */,
+				E69E27E61D66286000963773 /* ContactCellModelView.swift */,
+			);
+			path = ContactCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -565,12 +599,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				849725C61D6516E40060A7A1 /* Contact.swift in Sources */,
+				E69E27E71D66286000963773 /* ContactCellModelView.swift in Sources */,
+				E69E27DC1D6626E900963773 /* SendMoneyViewController.swift in Sources */,
+				E69E27E51D66284C00963773 /* ContactCellProtocol.swift in Sources */,
 				84B19E391D64A153007EC485 /* AppDelegate.swift in Sources */,
 				849725C01D6510420060A7A1 /* Request.swift in Sources */,
 				848E4D151D651F23001FB6C4 /* HomeViewModel.swift in Sources */,
+				E69E27E01D66271A00963773 /* SendMoneyViewModel.swift in Sources */,
+				E69E27E31D66279000963773 /* ContactCell.swift in Sources */,
 				849725C71D6516E40060A7A1 /* TransfersModel.swift in Sources */,
 				848E4D131D651F23001FB6C4 /* HomeProtocol.swift in Sources */,
 				848E4D141D651F23001FB6C4 /* HomeViewController.swift in Sources */,
+				E69E27DE1D66270700963773 /* SendMoneyProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

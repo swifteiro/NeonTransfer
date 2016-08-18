@@ -23,7 +23,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewWillLayoutSubviews()
+        self.title = " "
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func viewDidLayoutSubviews() {
@@ -45,6 +54,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func goToSendMoney(sender: AnyObject) {
+        self.performSegueWithIdentifier("goToSendMoney", sender: self)
     }
     
     @IBAction func goToHistory(sender: AnyObject) {
