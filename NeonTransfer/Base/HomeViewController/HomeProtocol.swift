@@ -13,4 +13,5 @@ protocol HomePresentation {
     func setBackgraoundColor(color: UIColor, view: HomeViewController)
     func setupViewProfile(color: UIColor, view: UIView)
     func setupImageViewProfile(img: UIImageView)
+    func setupButtonHome(button: UIButton, title: String, textColor: UIColor)
 }

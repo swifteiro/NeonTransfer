@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    let backgroundColor = UIColor.init(red: 31/255, green: 238/255, blue: 154/255, alpha: 1.0)
+    let backgroundColor = UIColor(red: 31/255, green: 238/255, blue: 154/255, alpha: 1.0)
     typealias HomeProtocol = protocol <HomePresentation>
     
     @IBOutlet weak var viewProfile: UIView!
@@ -40,6 +40,8 @@ class HomeViewController: UIViewController {
         homeProtocol.setBackgraoundColor(self.backgroundColor, view: self)
         homeProtocol.setupViewProfile(self.backgroundColor, view: self.viewProfile)
         homeProtocol.setupImageViewProfile(self.imgProfile)
+        homeProtocol.setupButtonHome(self.buttonSendMoney, title: "ENVIAR DINHEIRO", textColor: self.backgroundColor)
+        homeProtocol.setupButtonHome(self.buttonHistory, title: "HISTÓRICO DE ENVIOS", textColor: self.backgroundColor)
     }
     
     @IBAction func goToSendMoney(sender: AnyObject) {
