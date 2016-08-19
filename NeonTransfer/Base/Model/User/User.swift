@@ -20,9 +20,7 @@ class User {
             static var onceToken: dispatch_once_t = 0
             static var instance: User? = nil
         }
-        dispatch_once(&Static.onceToken) {
-            Static.instance = User()
-        }
+        dispatch_once(&Static.onceToken) { Static.instance = User() }
         return Static.instance!
     }
     

@@ -283,7 +283,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" id="1VJ-V2-iHg" customClass="HistoryCell" customModule="NeonTransfer" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" id="1VJ-V2-iHg" customClass="HistoryCell" customModule="NeonTransfer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1VJ-V2-iHg" id="T2r-9C-3WD">
@@ -327,7 +327,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vinicius Minozzi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsu-Ke-MVJ">
-                                                    <rect key="frame" x="83" y="18" width="284" height="21"/>
+                                                    <rect key="frame" x="83" y="8" width="284" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="4iU-2x-mfv"/>
                                                     </constraints>
@@ -336,7 +336,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(11)98719-4717" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toU-Sx-bGI">
-                                                    <rect key="frame" x="83" y="41" width="284" height="21"/>
+                                                    <rect key="frame" x="83" y="31" width="284" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="HJE-BC-GNI"/>
                                                     </constraints>
@@ -344,21 +344,41 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 de Julho de 2016 - às 12h00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apj-h7-IF1">
+                                                    <rect key="frame" x="83" y="55" width="284" height="19"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="19" id="AlT-8Z-h5b"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vsu-Ke-MVJ" firstAttribute="leading" secondItem="OdF-Jj-U9z" secondAttribute="trailing" constant="8" id="51u-ew-7CH"/>
+                                                <constraint firstItem="Apj-h7-IF1" firstAttribute="leading" secondItem="OdF-Jj-U9z" secondAttribute="trailing" constant="8" id="A0m-0h-Zdh"/>
                                                 <constraint firstAttribute="trailing" secondItem="dLL-5U-95P" secondAttribute="trailing" constant="8" id="DbD-WB-Zmb"/>
                                                 <constraint firstItem="toU-Sx-bGI" firstAttribute="leading" secondItem="OdF-Jj-U9z" secondAttribute="trailing" constant="8" id="EsK-jx-MLs"/>
                                                 <constraint firstItem="toU-Sx-bGI" firstAttribute="top" secondItem="vsu-Ke-MVJ" secondAttribute="bottom" constant="2" id="IhK-GK-SHQ"/>
                                                 <constraint firstItem="OdF-Jj-U9z" firstAttribute="top" secondItem="T2r-9C-3WD" secondAttribute="top" constant="10" id="MqS-vL-m3k"/>
                                                 <constraint firstAttribute="trailing" secondItem="vsu-Ke-MVJ" secondAttribute="trailing" constant="8" id="Sgm-Yw-qV3"/>
-                                                <constraint firstItem="vsu-Ke-MVJ" firstAttribute="top" secondItem="T2r-9C-3WD" secondAttribute="top" constant="18" id="aXO-vq-nsx"/>
+                                                <constraint firstAttribute="trailing" secondItem="Apj-h7-IF1" secondAttribute="trailing" constant="8" id="Yyu-Wa-GNV"/>
+                                                <constraint firstItem="vsu-Ke-MVJ" firstAttribute="top" secondItem="T2r-9C-3WD" secondAttribute="top" constant="8" id="aXO-vq-nsx"/>
                                                 <constraint firstItem="dLL-5U-95P" firstAttribute="leading" secondItem="T2r-9C-3WD" secondAttribute="leading" constant="8" id="aok-HV-fQg"/>
                                                 <constraint firstAttribute="bottom" secondItem="dLL-5U-95P" secondAttribute="bottom" id="bgu-8J-JOV"/>
                                                 <constraint firstAttribute="trailing" secondItem="toU-Sx-bGI" secondAttribute="trailing" constant="8" id="lJP-fg-97L"/>
                                                 <constraint firstItem="OdF-Jj-U9z" firstAttribute="leading" secondItem="T2r-9C-3WD" secondAttribute="leading" constant="15" id="tNV-Kx-IMB"/>
+                                                <constraint firstItem="Apj-h7-IF1" firstAttribute="top" secondItem="toU-Sx-bGI" secondAttribute="bottom" constant="3" id="yOL-2D-0Jv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Apj-h7-IF1" id="NZH-oe-l4H"/>
+                                            <outlet property="initialLabel" destination="AxA-36-VJk" id="ARR-uo-rGA"/>
+                                            <outlet property="nameLabel" destination="vsu-Ke-MVJ" id="agi-Rl-qrp"/>
+                                            <outlet property="phoneLabel" destination="toU-Sx-bGI" id="O3e-i5-DA6"/>
+                                            <outlet property="profileImg" destination="Nmd-WK-tZO" id="xkA-SN-zpw"/>
+                                            <outlet property="profileView" destination="OdF-Jj-U9z" id="sl7-vd-kcP"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -376,6 +396,9 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="S8Y-a3-UY7" id="0yj-4A-X9u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btc-1X-eCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

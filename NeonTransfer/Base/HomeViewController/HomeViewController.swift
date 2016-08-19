@@ -29,10 +29,12 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
         
-        Request.requestAPI(["nome" : "Vinicius", "email" : "vin.minozzi@gmail.com"], callType: .Token, successBlock: { (token) in
-            User.sharedInstance.setUser(["name" : "Vinicius", "email" : "vin.minozzi@gmail.com", "token" : token ?? "", "picture" : "img_profile"])
+        if User.isFirstAccess() {
+            Request.requestAPI(["nome" : "Vinicius", "email" : "vin.minozzi@gmail.com"], callType: .Token, successBlock: { (token) in
+                //
             }) { (stringError) in
                 //
+            }
         }
     }
     

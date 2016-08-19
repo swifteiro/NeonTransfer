@@ -17,8 +17,8 @@ class Contact: RLMObject, Deserializable {
     dynamic var phone       = ""
     dynamic var picture     = ""
     
-    required init(dictionary: [String : AnyObject]) {
-        super.init()
+    convenience required init(dictionary: [String : AnyObject]) {
+        self.init()
         idContact       <-- dictionary["id"]
         name            <-- dictionary["name"]
         phone           <-- dictionary["phone"]
@@ -36,8 +36,8 @@ class Contact: RLMObject, Deserializable {
         var arrayContacts = [Contact]()
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(dataJson, options: .AllowFragments)
-            if let dictData = json.objectForKey("contacts") as? [Contact] {
-                dictData.forEach({arrayContacts.append($0)})
+            if let dictData = json.objectForKey("contacts") as? NSArray {
+                dictData.forEach({arrayContacts.append(Contact(dictionary: $0 as! [String : AnyObject]))})
                 self.persistContacts(arrayContacts)
                 return arrayContacts
             }
@@ -49,7 +49,6 @@ class Contact: RLMObject, Deserializable {
     }
     
     class func getAllObjects() -> [Contact] {
-        if (Contact.allObjects().toArray(Contact.self)).count == 0 { return jsonParsingFromFile() }
         return Contact.allObjects().toArray(Contact.self)
     }
     

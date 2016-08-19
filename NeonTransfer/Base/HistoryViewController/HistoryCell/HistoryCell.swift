@@ -12,12 +12,13 @@ class HistoryCell: UITableViewCell {
 
     @IBOutlet weak var initialLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var profileView: UIView!
     typealias CellProtocol = protocol <HistoryCellPresentation>
     
-    func setupCell(cellProtocol :CellProtocol) {
+    func setupHistoryCell(cellProtocol :CellProtocol) {
         cellProtocol.setupCellWithContact(self)
     }
 }

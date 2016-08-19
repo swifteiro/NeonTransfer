@@ -35,7 +35,8 @@ struct Request {
                 case .Success:
                     switch callType {
                         case .Token:
-                            print(response.result.value) //fec15e52-10b3-4f3f-bee9-c55f78989e8b
+                            User.sharedInstance.setUser(["name" : "Vinicius", "email" : "vin.minozzi@gmail.com", "token" : response.result.value ?? "", "picture" : "img_profile"])
+                            Contact.jsonParsingFromFile()
                             break
                         case .SendMoney:
                             break

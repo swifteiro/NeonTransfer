@@ -8,13 +8,17 @@
 
 import UIKit
 
-class HistoryCellModelView: NSObject, ContactCellPresentation {
+class HistoryCellModelView: NSObject, HistoryCellPresentation {
     
     var contact :Contact?
+    var transfer: TransfersModel?
     
-    init(contact: Contact) { self.contact = contact }
+    init(contact: Contact, transfer: TransfersModel) {
+        self.contact = contact
+        self.transfer = transfer
+    }
     
-    func setupCellWithContact(cell: ContactCell) {
+    func setupCellWithContact(cell: HistoryCell) {
         cell.nameLabel.text = self.contact?.name
         cell.phoneLabel.text = self.contact?.phone
         cell.profileView?.circleMask
@@ -22,10 +26,27 @@ class HistoryCellModelView: NSObject, ContactCellPresentation {
         cell.profileView.backgroundColor = UIColor.clearColor()
         cell.backgroundColor = UIColor.clearColor()
         
+        guard let createdDateString = self.transfer?.dateTransfer else {
+            return
+        }
+        let dateFormatter = NSDateFormatter()
+        let createdDate = dateFormatter.dateFromTransferString(createdDateString)
+        dateFormatter.dateFormat = "dd 'de' MMMM 'de' yyyy', às' HH'h'mm"
+        cell.dateLabel.text = dateFormatter.stringFromDate(createdDate!)
+        
         if let name = self.contact?.name.componentsSeparatedByString(" ") {
             var initailString = ""
             for string in name { initailString = initailString + String(string.characters.first!) }
             cell.initialLabel.text = initailString
         }
+    }
+}
+
+extension NSDateFormatter {
+    func dateFromTransferString(dateString: String) -> NSDate? {
+        self.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SS"
+        self.timeZone = NSTimeZone(abbreviation: "UTC")
+        self.locale = NSLocale(localeIdentifier: "pt_BR")
+        return self.dateFromString(dateString)
     }
 }

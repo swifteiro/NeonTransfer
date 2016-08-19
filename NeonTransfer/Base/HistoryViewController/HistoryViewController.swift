@@ -7,25 +7,18 @@
 //
 
 import UIKit
+import Realm
+import SVProgressHUD
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrayContacts :NSMutableArray = []
+    var arrayTransfers :[TransfersModel] = []
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Request.requestAPI(["Token" : "fec15e52-10b3-4f3f-bee9-c55f78989e8b"], callType: .Transfer, successBlock: { (obj) in
-            print(obj)
-            }) { (stringError) in
-                //
-        }
-        
-//        self.arrayContacts = Contact.jsonParsingFromFile()
-//        dispatch_async(dispatch_get_main_queue()) {
-//            self.tableView.reloadData()
-//        }
+        self.getTransfers()
         self.title = "HISTÓRICO DE ENVIOS"
     }
     
@@ -41,7 +34,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arrayContacts.count
+        return self.arrayTransfers.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -51,14 +44,37 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-//        let historyCell = cell as? HistoryCell
-//        let contact = self.arrayContacts[indexPath.row]
-//        let contactCellViewModel = ContactCellModelView(contact: contact as! HistoryCell)
-//        historyCell?.setupCell(contactCellViewModel)
+        if self.arrayTransfers.count > 0 {
+            let historyCell = cell as? HistoryCell
+            let transfer :TransfersModel = self.arrayTransfers[indexPath.row]
+            let contactResult = Contact.objectsWithPredicate(NSPredicate(format: "idContact = %@", transfer.idClient))
+            if let contact = contactResult.firstObject() as? Contact {
+                let historyCellViewModel = HistoryCellModelView(contact: contact, transfer: transfer)
+                historyCell?.setupHistoryCell(historyCellViewModel)
+            }
+        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    //MARK: GET TRANSFERS
+    func getTransfers() {
+        SVProgressHUD.show()
+        Request.requestAPI(["Token" : "fec15e52-10b3-4f3f-bee9-c55f78989e8b"], callType: .Transfer, successBlock: { (transfers) in
+            if transfers?.count > 0 {
+                SVProgressHUD.dismiss()
+                if let transfersReturn :[TransfersModel] = transfers as? [TransfersModel] {
+                    self.arrayTransfers = transfersReturn
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.tableView.reloadData()
+                    }
+                }
+            }
+        }) { (stringError) in
+            SVProgressHUD.dismiss()
+        }
     }
 
 }
