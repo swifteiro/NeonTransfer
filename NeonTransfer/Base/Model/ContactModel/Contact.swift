@@ -9,14 +9,16 @@
 import UIKit
 
 import JSONHelper
+import Realm
 
-class Contact: Deserializable {
+class Contact: RLMObject, Deserializable {
     dynamic var idContact   = ""
     dynamic var name        = ""
     dynamic var phone       = ""
     dynamic var picture     = ""
     
-    required init(dictionary: [String : AnyObject]) {
+    convenience required init(dictionary: [String : AnyObject]) {
+        self.init()
         idContact       <-- dictionary["id"]
         name            <-- dictionary["name"]
         phone           <-- dictionary["phone"]
@@ -34,8 +36,9 @@ class Contact: Deserializable {
         var arrayContacts = [Contact]()
         do {
             let json = try NSJSONSerialization.JSONObjectWithData(dataJson, options: .AllowFragments)
-            if let dictData = json.objectForKey("contacts") as? [Contact] {
-                dictData.forEach({arrayContacts.append($0)})
+            if let dictData = json.objectForKey("contacts") as? NSArray {
+                dictData.forEach({arrayContacts.append(Contact(dictionary: $0 as! [String : AnyObject]))})
+                self.persistContacts(arrayContacts)
                 return arrayContacts
             }
         } catch {
@@ -43,5 +46,29 @@ class Contact: Deserializable {
         }
         
         return [Contact]()
+    }
+    
+    class func getAllObjects() -> [Contact] {
+        return Contact.allObjects().toArray(Contact.self)
+    }
+    
+    class func persistContacts(objects: [Contact]?) {
+        autoreleasepool {
+            guard let objects = objects where objects.count > 0 else { return }
+            do {
+                let realm = RLMRealm.defaultRealm()
+                realm.beginWriteTransaction()
+                realm.addObjects(objects)
+                try realm.commitWriteTransaction()
+            } catch {
+                print("Realm did not write objects! \(objects)")
+            }
+        }
+    }
+}
+
+extension RLMResults {
+    func toArray<T>(ofType: T.Type) -> [T] {
+        return (0..<self.count).flatMap { self.objectAtIndex($0) as? T }
     }
 }
