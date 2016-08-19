@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    let backgroundColor = UIColor.init(red: 31/255, green: 238/255, blue: 154/255, alpha: 1.0)
+    let backgroundColor = UIColor(red: 31/255, green: 238/255, blue: 154/255, alpha: 1.0)
     typealias HomeProtocol = protocol <HomePresentation>
     
     @IBOutlet weak var viewProfile: UIView!
