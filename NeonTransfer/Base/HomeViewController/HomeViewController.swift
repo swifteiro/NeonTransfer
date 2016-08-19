@@ -23,7 +23,23 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         super.viewWillLayoutSubviews()
-        // Do any additional setup after loading the view.
+        self.title = " "
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+        
+        if User.isFirstAccess() {
+            Request.requestAPI(["nome" : "Vinicius", "email" : "vin.minozzi@gmail.com"], callType: .Token, successBlock: { (token) in
+                //
+            }) { (stringError) in
+                //
+            }
+        }
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func viewDidLayoutSubviews() {
@@ -33,7 +49,6 @@ class HomeViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func setupView(homeProtocol: HomeProtocol) {
@@ -45,8 +60,10 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func goToSendMoney(sender: AnyObject) {
+        self.performSegueWithIdentifier("goToSendMoney", sender: self)
     }
     
     @IBAction func goToHistory(sender: AnyObject) {
+        self.performSegueWithIdentifier("goToHistory", sender: self)
     }
 }
