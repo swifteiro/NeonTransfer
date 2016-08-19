@@ -25,6 +25,7 @@
 		84DD8A0D1D64973B00E1E4E3 /* NeonTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */; };
 		E60BE5F51D667050004AC04D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BE5F41D667050004AC04D /* User.swift */; };
 		E6739BC81D679A0A00B00BA4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6739BC71D679A0A00B00BA4 /* Reachability.swift */; };
+		E6739BCB1D67ABDF00B00BA4 /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6739BCA1D67ABDF00B00BA4 /* UserTest.swift */; };
 		E69E27DC1D6626E900963773 /* SendMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27DB1D6626E900963773 /* SendMoneyViewController.swift */; };
 		E69E27DE1D66270700963773 /* SendMoneyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27DD1D66270700963773 /* SendMoneyProtocol.swift */; };
 		E69E27E01D66271A00963773 /* SendMoneyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E27DF1D66271A00963773 /* SendMoneyViewModel.swift */; };
@@ -87,6 +88,7 @@
 		D86FC5C6C325CE96C040A7D8 /* Pods-NeonTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E60BE5F41D667050004AC04D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E6739BC71D679A0A00B00BA4 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E6739BCA1D67ABDF00B00BA4 /* UserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTest.swift; sourceTree = "<group>"; };
 		E69E27DB1D6626E900963773 /* SendMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewController.swift; sourceTree = "<group>"; };
 		E69E27DD1D66270700963773 /* SendMoneyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyProtocol.swift; sourceTree = "<group>"; };
 		E69E27DF1D66271A00963773 /* SendMoneyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMoneyViewModel.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 		84DD8A001D64973B00E1E4E3 /* NeonTransferTests */ = {
 			isa = PBXGroup;
 			children = (
+				E6739BC91D67ABBF00B00BA4 /* UserTest */,
 				849725C81D651A5E0060A7A1 /* ContactTest */,
 				849725CA1D651A5E0060A7A1 /* TransferTest */,
 				84DD8A031D64973B00E1E4E3 /* Info.plist */,
@@ -301,6 +304,14 @@
 				E60BE5F41D667050004AC04D /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		E6739BC91D67ABBF00B00BA4 /* UserTest */ = {
+			isa = PBXGroup;
+			children = (
+				E6739BCA1D67ABDF00B00BA4 /* UserTest.swift */,
+			);
+			path = UserTest;
 			sourceTree = "<group>";
 		};
 		E69E27DA1D6626CE00963773 /* SendMoneyViewController */ = {
@@ -635,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				849725CC1D651A5E0060A7A1 /* ContactTest.swift in Sources */,
+				E6739BCB1D67ABDF00B00BA4 /* UserTest.swift in Sources */,
 				849725CD1D651A5E0060A7A1 /* TransferTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
