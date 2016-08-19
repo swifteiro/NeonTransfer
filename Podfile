@@ -17,6 +17,7 @@ target 'NeonTransferTests' do
 
 pod 'JSONHelper'
 pod 'Alamofire'
+pod 'Realm'
 
 end
 

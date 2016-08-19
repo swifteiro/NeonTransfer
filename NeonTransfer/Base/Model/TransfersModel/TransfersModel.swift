@@ -11,13 +11,13 @@ import UIKit
 import JSONHelper
 
 class TransfersModel: Deserializable {
-    dynamic var idCliente    = ""
+    dynamic var idClient     = ""
     dynamic var token        = ""
     dynamic var value        = ""
     dynamic var dateTransfer = ""
     
     required init(dictionary: [String : AnyObject]) {
-        idCliente       <-- dictionary["ClienteId"]
+        idClient        <-- dictionary["ClienteId"]
         token           <-- dictionary["Token"]
         value           <-- dictionary["Valor"]
         dateTransfer    <-- dictionary["Data"]
