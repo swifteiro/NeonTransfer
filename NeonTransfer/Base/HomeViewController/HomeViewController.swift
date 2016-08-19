@@ -38,6 +38,11 @@ class HomeViewController: UIViewController {
             }) { (stringError) in
                 SVProgressHUD.dismiss()
                 let alert = UIAlertController(title: "NeonTransfer", message: stringError, preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
+                    UIAlertAction in
+                    print("OK")
+                }
+                alert.addAction(okAction)
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
