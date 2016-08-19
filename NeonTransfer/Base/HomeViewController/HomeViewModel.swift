@@ -26,6 +26,21 @@ extension UIImage {
     }
 }
 
+extension UIView {
+    var circleMask: UIView {
+        let square = CGSize(width: min(frame.size.width, frame.size.height), height: min(frame.size.width, frame.size.height))
+        frame = (frame: CGRect(origin: CGPoint(x: frame.origin.x, y: frame.origin.y), size: square))
+        contentMode = UIViewContentMode.ScaleAspectFill
+        layer.cornerRadius = square.width/2
+        layer.borderColor = UIColor.whiteColor().CGColor
+        layer.borderWidth = 1
+        layer.masksToBounds = true
+        UIGraphicsBeginImageContext(bounds.size)
+        layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        return self
+    }
+}
+
 class HomeViewModel: NSObject, HomePresentation {
     
     private var homeView: HomeViewController?
@@ -39,15 +54,7 @@ class HomeViewModel: NSObject, HomePresentation {
     }
     
     func setupViewProfile(color :UIColor, view :UIView) {
-        let square = CGSize(width: min(view.frame.size.width, view.frame.size.height), height: min(view.frame.size.width, view.frame.size.height))
-        view.frame = (frame: CGRect(origin: CGPoint(x: view.frame.origin.x, y: view.frame.origin.y), size: square))
-        view.contentMode = UIViewContentMode.ScaleAspectFill
-        view.layer.cornerRadius = square.width/2
-        view.layer.borderColor = UIColor.whiteColor().CGColor
-        view.layer.borderWidth = 1
-        view.layer.masksToBounds = true
-        UIGraphicsBeginImageContext(view.bounds.size)
-        view.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        view.circleMask
         view.backgroundColor = color
     }
     

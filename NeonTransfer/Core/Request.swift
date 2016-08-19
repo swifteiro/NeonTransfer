@@ -25,9 +25,9 @@ struct APIUrls {
 struct Request {
     
     // MARK: REQUEST
-    static func getToken(params : [String : AnyObject]?, callType: CallType,
-                        successBlock : ([AnyObject]? -> ()),
-                        failure failureBlock : (String? -> ())) {
+    static func requestAPI(params : [String : AnyObject]?, callType: CallType,
+                           successBlock : ([AnyObject]? -> ()),
+                           failure failureBlock : (String? -> ())) {
         Alamofire.request(isGet(callType) ? .GET : .POST, getServerURL(callType), parameters:params)
             .validate()
             .responseJSON { response in
@@ -35,6 +35,7 @@ struct Request {
                 case .Success:
                     switch callType {
                         case .Token:
+                            print(response.result.value) //fec15e52-10b3-4f3f-bee9-c55f78989e8b
                             break
                         case .SendMoney:
                             break
