@@ -24,6 +24,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         super.viewWillLayoutSubviews()
         // Do any additional setup after loading the view.
+        
+        self.createCustomAlertViewController()
     }
     
     override func viewDidLayoutSubviews() {
