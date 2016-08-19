@@ -62,7 +62,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: GET TRANSFERS
     func getTransfers() {
         SVProgressHUD.show()
-        Request.requestAPI(["Token" : "fec15e52-10b3-4f3f-bee9-c55f78989e8b"], callType: .Transfer, successBlock: { (transfers) in
+        Request.requestAPI(["Token" : User.getTokenFromUserDefaults()], callType: .Transfer, successBlock: { (transfers) in
             if transfers?.count > 0 {
                 SVProgressHUD.dismiss()
                 if let transfersReturn :[TransfersModel] = transfers as? [TransfersModel] {
@@ -74,6 +74,8 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
         }) { (stringError) in
             SVProgressHUD.dismiss()
+            let alert = UIAlertController(title: "NeonTransfer", message: stringError, preferredStyle: UIAlertControllerStyle.Alert)
+            self.presentViewController(alert, animated: true, completion: nil)
         }
     }
 

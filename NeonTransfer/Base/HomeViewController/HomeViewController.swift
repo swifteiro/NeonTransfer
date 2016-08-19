@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class HomeViewController: UIViewController {
 
@@ -30,10 +31,14 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBarHidden = true
         
         if User.isFirstAccess() {
+            SVProgressHUD.show()
             Request.requestAPI(["nome" : "Vinicius", "email" : "vin.minozzi@gmail.com"], callType: .Token, successBlock: { (token) in
-                //
+                print("saiu da jaula")
+                SVProgressHUD.dismiss()
             }) { (stringError) in
-                //
+                SVProgressHUD.dismiss()
+                let alert = UIAlertController(title: "NeonTransfer", message: stringError, preferredStyle: UIAlertControllerStyle.Alert)
+                self.presentViewController(alert, animated: true, completion: nil)
             }
         }
     }

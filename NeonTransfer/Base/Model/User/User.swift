@@ -36,4 +36,11 @@ class User {
         if let user = NSUserDefaults.standardUserDefaults().objectForKey("user") { if (user.count > 0) {return false} }
         return true
     }
+    
+    class func getTokenFromUserDefaults() -> String {
+        if let dictUser = NSUserDefaults.standardUserDefaults().objectForKey("user") {
+            return (dictUser.objectForKey("token") as? String)!
+        }
+        return ""
+    }
 }

@@ -28,12 +28,13 @@ struct Request {
     static func requestAPI(params : [String : AnyObject]?, callType: CallType,
                            successBlock : ([AnyObject]? -> ()),
                            failure failureBlock : (String? -> ())) {
-        Alamofire.request(isGet(callType) ? .GET : .POST, getServerURL(callType), parameters:params)
-            .validate()
-            .responseJSON { response in
-                switch response.result {
-                case .Success:
-                    switch callType {
+        if Reachability.isConnectedToNetwork() {
+            Alamofire.request(isGet(callType) ? .GET : .POST, getServerURL(callType), parameters:params)
+                .validate()
+                .responseJSON { response in
+                    switch response.result {
+                    case .Success:
+                        switch callType {
                         case .Token:
                             User.sharedInstance.setUser(["name" : "Vinicius", "email" : "vin.minozzi@gmail.com", "token" : response.result.value ?? "", "picture" : "img_profile"])
                             Contact.jsonParsingFromFile()
@@ -48,12 +49,15 @@ struct Request {
                             }
                             break
                         }
-                    break
-                case .Failure(let error):
-                    print(error)
-                    failureBlock("não vai dar não")
-                    break
-                }
+                        break
+                    case .Failure(let error):
+                        print(error)
+                        failureBlock("não vai dar não")
+                        break
+                    }
+            }
+        } else {
+            failureBlock("Sem conexão com a internet.")
         }
     }
     
