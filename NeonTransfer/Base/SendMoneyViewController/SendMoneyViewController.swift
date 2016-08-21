@@ -80,6 +80,7 @@ class SendMoneyViewController: UIViewController, UITableViewDelegate, UITableVie
         let textField = self.view.viewWithTag(888) as? UITextField
         textField?.resignFirstResponder()
         
+        SVProgressHUD.show()
         self.sendMoneyRepresentation.sendMoneyWithContactAndValue(textField?.text?.characters.count ?? 0, valueString: textField?.text ?? "", successBlock: { () in
             SVProgressHUD.dismiss()
             self.dismissCustomAlert()

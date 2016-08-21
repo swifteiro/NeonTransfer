@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-NeonTransferUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,7 +47,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>07AD4B8F124FA543EE4C4BBD52B1B0CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0B2216FA9ED18EAC3BA987132C0BAA42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3223C20C2847E497FADA20461C04C178</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>373FA017307F3CC6C94DB5C257475EF8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,27 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84431544E4DD137A1EB664C427CD7EE5</key>
+		<key>A41296713BDB99AA244DA16EA22A0F07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DF8514BDB8C07FC064FE042ABFC827E</key>
+		<key>C58113D7FAAB36EDB756489AB2735A4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>923844A01AB3A67F7DA8D925533280D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9D67D464F047DF5396AC620DE05CF7A3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A2534557468494821183215661893D5E</key>
+		<key>FB3DB2C1C9A84FAE5A633A3F8689B69A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

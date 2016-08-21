@@ -9,7 +9,7 @@
 import XCTest
 
 @testable import NeonTransfer
-@testable import JSONHelper
+import JSONHelper
 
 class TransferTest: XCTestCase {
     
