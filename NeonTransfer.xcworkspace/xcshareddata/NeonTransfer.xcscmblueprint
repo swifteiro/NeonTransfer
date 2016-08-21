@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F28BC6D7CC548E4597B731A64EB284688641CE2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "92BA9DE707936E1C5F902E483535B84D6A640327" : 0,
+    "8F28BC6D7CC548E4597B731A64EB284688641CE2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0DE964DF-0676-4B14-8A76-661D5C5E1A95",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "92BA9DE707936E1C5F902E483535B84D6A640327" : "",
+    "8F28BC6D7CC548E4597B731A64EB284688641CE2" : "NeonTransfer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NeonTransfer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NeonTransfer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/swifteiro\/NeonTransfer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F28BC6D7CC548E4597B731A64EB284688641CE2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vminozzi\/NeonTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "92BA9DE707936E1C5F902E483535B84D6A640327"
+    }
+  ]
+}

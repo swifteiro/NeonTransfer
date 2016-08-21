@@ -10,6 +10,8 @@ pod 'Realm'
 pod 'SVProgressHUD'
 pod 'SDWebImage'
 pod 'Alamofire'
+pod 'Fabric'
+pod 'Crashlytics'
 
 end
 
