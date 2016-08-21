@@ -2,8 +2,8 @@
 //  NeonTransferUITests.swift
 //  NeonTransferUITests
 //
-//  Created by Bruno Henrique Machado dos Santos on 8/17/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Created by Vinicius Minozzi on 8/17/16.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import XCTest
@@ -29,8 +29,8 @@ class NeonTransferUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        XCTAssertTrue(app.tables.count == 2)
     }
     
 }

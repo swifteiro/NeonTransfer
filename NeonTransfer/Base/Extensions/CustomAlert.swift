@@ -2,34 +2,34 @@
 //  CustomAlert.swift
 //  NeonTransfer
 //
-//  Created by Bruno Henrique Machado dos Santos on 8/18/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Created by Vinicius Minozzi on 8/18/16.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
 
 extension UIViewController {
     
-    func createCustomAlertViewController() {
-        self.view.addSubview(self.createShadowView())
+    func createCustomAlertViewController(contact: Contact, contactImage: UIImage) {
+        self.view.addSubview(self.createShadowView(contact, contactImage: contactImage))
     }
     
-    func createShadowView() -> UIView {
+    func createShadowView(contact: Contact, contactImage: UIImage) -> UIView {
         let shadowView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height))
         shadowView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
         shadowView.tag = 999
-        shadowView.addSubview(self.createWhiteView())
+        shadowView.addSubview(self.createWhiteView(contact, contactImage: contactImage))
         return shadowView
     }
     
-    func createWhiteView() -> UIView {
+    func createWhiteView(contact: Contact, contactImage: UIImage) -> UIView {
         let whiteView = UIView(frame: CGRectMake(0, 0, self.view.frame.size.width - 50, self.view.frame.size.height / 2))
         whiteView.center = self.view.center
         whiteView.backgroundColor = UIColor.whiteColor()
         whiteView.layer.cornerRadius = 10
         whiteView.addSubview(self.createCloseButton())
-        whiteView.addSubview(self.createPersonUIImage(whiteView))
-        let labels = (self.createNameAndPhoneLabel("Bruno Santos", phone: "(11) 9898 - 1212", whiteView: whiteView))
+        whiteView.addSubview(self.createPersonUIImage(whiteView, image: contactImage, contactName: contact.name))
+        let labels = (self.createNameAndPhoneLabel(contact.name, phone: contact.phone, whiteView: whiteView))
         whiteView.addSubview(labels.0)
         whiteView.addSubview(labels.1)
         whiteView.addSubview(labels.2)
@@ -41,19 +41,31 @@ extension UIViewController {
     
     func createCloseButton() -> UIButton {
         let button = UIButton(frame: CGRectMake(10, 10, 20, 20))
-        button.backgroundColor = UIColor.blackColor()
+        button.setImage(UIImage(named: "icon_close"), forState: .Normal)
         button.addTarget(self, action: #selector(UIViewController.dismissCustomAlert), forControlEvents: .TouchUpInside)
         return button
     }
     
-    func createPersonUIImage(whiteView: UIView) -> UIView {
+    func createPersonUIImage(whiteView: UIView, image: UIImage, contactName: String) -> UIView {
+        
+        let name = contactName.componentsSeparatedByString(" ")
+        var initailString = ""
+        for string in name { initailString = initailString + String(string.characters.first!) }
+    
+        let label = UILabel(frame: CGRectMake(0, 0, 80, 80))
+        label.text = initailString
+        label.textAlignment = .Center
+        label.font = UIFont.systemFontOfSize(30)
+        label.textColor = ThemeApp.profileBorderImageColor
+        
         let personImage = UIImageView(frame: CGRectMake(0, 0, 80, 80))
-        personImage.image = UIImage(named: "img_profile")
+        personImage.image = image
         let view = UIView(frame: CGRectMake((whiteView.frame.size.width / 2) - 40, 10, 80, 80))
-        view.layer.borderColor  = UIColor.blueColor().CGColor
+        view.layer.borderColor  = ThemeApp.profileBorderImageColor.CGColor
         view.layer.borderWidth  = 1.0
         view.layer.cornerRadius = 40.0
         view.clipsToBounds = true
+        view.addSubview(label)
         view.addSubview(personImage)
         return view
     }
@@ -82,10 +94,10 @@ extension UIViewController {
         textField.backgroundColor = UIColor(hexString: "EFEFEF")
         textField.layer.cornerRadius = 10
         textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor.blueColor().CGColor
+        textField.layer.borderColor = ThemeApp.profileBorderImageColor.CGColor
         textField.textAlignment = .Center
         textField.textColor = UIColor(hexString: "00A7DF")
-        textField.font = UIFont.boldSystemFontOfSize(20)
+        textField.font = UIFont.boldSystemFontOfSize(35)
         textField.keyboardType = .NumberPad
         textField.tag = 888
         textField.addTarget(self, action: #selector(SendMoneyViewController.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)

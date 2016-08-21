@@ -3,7 +3,7 @@
 //  NeonTransfer
 //
 //  Created by Vinicius on 20/08/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ extension UIImage {
         imageView.image = self
         imageView.layer.cornerRadius = square.width/2
         imageView.layer.borderColor = UIColor.blueColor().CGColor
-        imageView.layer.borderWidth = 2
+        imageView.layer.borderWidth = 1
         imageView.layer.masksToBounds = true
         UIGraphicsBeginImageContext(imageView.bounds.size)
         imageView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
@@ -33,7 +33,7 @@ extension UIView {
         contentMode = UIViewContentMode.ScaleAspectFill
         layer.cornerRadius = square.width/2
         layer.borderColor = UIColor.whiteColor().CGColor
-        layer.borderWidth = 2
+        layer.borderWidth = 1
         layer.masksToBounds = true
         UIGraphicsBeginImageContext(bounds.size)
         layer.renderInContext(UIGraphicsGetCurrentContext()!)

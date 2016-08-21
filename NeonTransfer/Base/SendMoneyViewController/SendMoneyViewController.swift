@@ -3,7 +3,7 @@
 //  NeonTransfer
 //
 //  Created by Vinicius A. Minozzi on 8/18/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
@@ -68,9 +68,10 @@ class SendMoneyViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.createCustomAlertViewController()
-        self.setAlertButtonMethod()
         self.sendMoneyRepresentation.selectedContact = self.sendMoneyRepresentation.arrayContacts[indexPath.row]
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as? ContactCell
+        self.createCustomAlertViewController(self.sendMoneyRepresentation.selectedContact!, contactImage: (cell?.profileImg.image)!)
+        self.setAlertButtonMethod()
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
@@ -82,6 +83,8 @@ class SendMoneyViewController: UIViewController, UITableViewDelegate, UITableVie
         self.sendMoneyRepresentation.sendMoneyWithContactAndValue(textField?.text?.characters.count ?? 0, valueString: textField?.text ?? "", successBlock: { () in
             SVProgressHUD.dismiss()
             self.dismissCustomAlert()
+            self.createAlertFeedBack()
+            
             }) { (stringError) in
                 SVProgressHUD.dismiss()
                 let alert = UIAlertController(title: ThemeApp.alertTitle, message: stringError, preferredStyle: UIAlertControllerStyle.Alert)
@@ -121,5 +124,31 @@ class SendMoneyViewController: UIViewController, UITableViewDelegate, UITableVie
         guard let button = whiteView.subviews.filter({$0.tag == 666}).first as? UIButton else { return }
         button.addTarget(self, action: #selector(SendMoneyViewController.alertTapped), forControlEvents: .TouchUpInside)
         if let textFieldAlert = self.view.viewWithTag(888) as? UITextField { textFieldAlert.delegate = self }
+    }
+    
+    //MARK: FeedBackSendMondey
+    let feedBackAlert = UIView()
+    func createAlertFeedBack(){
+        self.feedBackAlert.frame = CGRectMake(0, -50, self.view.frame.size.width, 65)
+        feedBackAlert.backgroundColor = ThemeApp.profileBorderImageColor
+        
+        let msgLabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.size.width, 65))
+        msgLabel.textColor = UIColor.whiteColor()
+        msgLabel.text = "Dinheiro transferido com sucesso!"
+        msgLabel.textAlignment = .Center
+        feedBackAlert.addSubview(msgLabel)
+        self.view.window?.addSubview(feedBackAlert)
+        
+        UIView.animateWithDuration(1) { 
+            self.feedBackAlert.frame = CGRectMake(0, 0, self.view.frame.size.width, 65)
+            NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: #selector(SendMoneyViewController.dismissFeedBackAlert), userInfo: nil, repeats: false)
+        }
+    }
+    
+    @objc func dismissFeedBackAlert(){
+        UIView.animateWithDuration(1) {
+            self.feedBackAlert.frame = CGRectMake(0, -65, self.view.frame.size.width, 65)
+            self.feedBackAlert.removeFromSuperview()
+        }
     }
 }

@@ -3,7 +3,7 @@
 //  NeonTransfer
 //
 //  Created by Vinicius A. Minozzi on 8/17/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
@@ -22,7 +22,7 @@ class Contact: RLMObject, Deserializable {
         idContact       <-- dictionary["id"]
         name            <-- dictionary["name"]
         phone           <-- dictionary["phone"]
-        picture         <-- dictionary["picture"]
+        picture         <-- dictionary["picture_url"]
     }
     
     //MARK: FromJSONFile

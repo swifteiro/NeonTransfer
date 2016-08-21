@@ -3,7 +3,7 @@
 //  NeonTransfer
 //
 //  Created by Vinicius A. Minozzi on 8/18/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
@@ -29,7 +29,7 @@ class SendMoneyViewModel: NSObject, SendMoneyPresentation {
         
         guard let selectedContact = self.selectedContact else { return }
         
-        Request.requestAPI(["ClienteId" : selectedContact.idContact, "Token" : User.getTokenFromUserDefaults(), "valor" : Double(value)!], callType: .Transfer, successBlock: { (obj) in
+        Request.requestAPI(["ClienteId" : selectedContact.idContact, "Token" : User.getTokenFromUserDefaults(), "valor" : Double(value)!], callType: .SendMoney, successBlock: { (obj) in
             successBlock()
         }) { (stringError) in
             failureBlock(stringError)

@@ -3,10 +3,11 @@
 //  NeonTransfer
 //
 //  Created by Vinicius A. Minozzi on 8/18/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
+import SDWebImage
 
 class ContactCell: UITableViewCell {
 
@@ -20,9 +21,10 @@ class ContactCell: UITableViewCell {
         self.initialLabel.text = cellProtocol.setInitialLabel()
         self.nameLabel.text = cellProtocol.setCellTitle()
         self.phoneLabel.text = cellProtocol.setPhoneLabel()
-        self.profileImg.image = UIImage(named: cellProtocol.setImageProfileName())
+        self.profileImg.sd_setImageWithURL(NSURL(string: cellProtocol.setImageProfileName()), placeholderImage:UIImage())
         self.profileView?.circleMask
         self.profileView.backgroundColor = cellProtocol.setProfieViewBackgroundColor()
         self.profileView.layer.borderColor = cellProtocol.setProfileViewBorderColor().CGColor
     }
 }
+

@@ -3,7 +3,7 @@
 //  NeonTransfer
 //
 //  Created by Vinicius on 21/08/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 protocol HistoryPresentation {

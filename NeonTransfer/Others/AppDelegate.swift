@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  NeonTransfer
 //
-//  Created by Bruno Henrique Machado dos Santos on 8/17/16.
-//  Copyright © 2016 Bruno Santos. All rights reserved.
+//  Created by Vinicius Minozzi on 8/17/16.
+//  Copyright © 2016 Vinicius Minozzi All rights reserved.
 //
 
 import UIKit
