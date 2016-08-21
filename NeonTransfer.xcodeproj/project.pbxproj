@@ -23,6 +23,13 @@
 		84B19E3A1D64A153007EC485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E341D64A153007EC485 /* Assets.xcassets */; };
 		84B19E3B1D64A153007EC485 /* contacts_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 84B19E351D64A153007EC485 /* contacts_json.json */; };
 		84DD8A0D1D64973B00E1E4E3 /* NeonTransferUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD8A0C1D64973B00E1E4E3 /* NeonTransferUITests.swift */; };
+		A066F1021D68E9300067177A /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066F1011D68E9300067177A /* MaskView.swift */; };
+		A066F1041D68EE5D0067177A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066F1031D68EE5D0067177A /* Theme.swift */; };
+		A066F1061D6908900067177A /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066F1051D6908900067177A /* CustomAlert.swift */; };
+		A066F1081D69094E0067177A /* ColorWithHexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = A066F1071D69094E0067177A /* ColorWithHexString.swift */; };
+		A0A082181D695993005A0E82 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A082171D695993005A0E82 /* HistoryViewModel.swift */; };
+		A0A0821A1D6959C5005A0E82 /* HistoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A082191D6959C5005A0E82 /* HistoryProtocol.swift */; };
+		A0A0821C1D695D98005A0E82 /* CustomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0821B1D695D98005A0E82 /* CustomDate.swift */; };
 		E60BE5F51D667050004AC04D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60BE5F41D667050004AC04D /* User.swift */; };
 		E6739BC81D679A0A00B00BA4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6739BC71D679A0A00B00BA4 /* Reachability.swift */; };
 		E6739BCB1D67ABDF00B00BA4 /* UserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6739BCA1D67ABDF00B00BA4 /* UserTest.swift */; };
@@ -84,6 +91,13 @@
 		84DD8A0E1D64973B00E1E4E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92FB8B12B5FD33D744C1702B /* Pods-NeonTransferTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests.release.xcconfig"; sourceTree = "<group>"; };
 		9E25931A8F0C49A30178D173 /* Pods_NeonTransfer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransfer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A066F1011D68E9300067177A /* MaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
+		A066F1031D68EE5D0067177A /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A066F1051D6908900067177A /* CustomAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		A066F1071D69094E0067177A /* ColorWithHexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWithHexString.swift; sourceTree = "<group>"; };
+		A0A082171D695993005A0E82 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		A0A082191D6959C5005A0E82 /* HistoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryProtocol.swift; sourceTree = "<group>"; };
+		A0A0821B1D695D98005A0E82 /* CustomDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDate.swift; sourceTree = "<group>"; };
 		A447032D5272D85D7E88E4A9 /* Pods_NeonTransferTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NeonTransferTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07F2C1A490A4E7FD40E65A2 /* Pods-NeonTransferUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D86FC5C6C325CE96C040A7D8 /* Pods-NeonTransferUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeonTransferUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeonTransferUITests/Pods-NeonTransferUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,11 +201,13 @@
 		84B19E2C1D64A153007EC485 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A066F1001D68E91C0067177A /* Extensions */,
 				849725C11D6516E40060A7A1 /* Model */,
 				848E4D0F1D651F23001FB6C4 /* HomeViewController */,
 				E69E27DA1D6626CE00963773 /* SendMoneyViewController */,
 				E69E27E81D66556000963773 /* HistoryViewController */,
 				84B19E2D1D64A153007EC485 /* Storyboard */,
+				A066F1031D68EE5D0067177A /* Theme.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -278,6 +294,17 @@
 			path = NeonTransferUITests;
 			sourceTree = "<group>";
 		};
+		A066F1001D68E91C0067177A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A066F1011D68E9300067177A /* MaskView.swift */,
+				A066F1051D6908900067177A /* CustomAlert.swift */,
+				A066F1071D69094E0067177A /* ColorWithHexString.swift */,
+				A0A0821B1D695D98005A0E82 /* CustomDate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C7FAFF9CCE9C7978656C616F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,7 +376,9 @@
 		E69E27E81D66556000963773 /* HistoryViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A0A082191D6959C5005A0E82 /* HistoryProtocol.swift */,
 				E69E27E91D66557A00963773 /* HistoryViewController.swift */,
+				A0A082171D695993005A0E82 /* HistoryViewModel.swift */,
 				E69E27EB1D66558F00963773 /* HistoryCell */,
 			);
 			path = HistoryViewController;
@@ -378,6 +407,7 @@
 				84DD89E71D64973B00E1E4E3 /* Resources */,
 				BCCA0CF48396EE4B9194D38F /* [CP] Embed Pods Frameworks */,
 				13412F9AFC670CDC2AF001D3 /* [CP] Copy Pods Resources */,
+				770CF2F5728D86A833992E18 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -398,6 +428,7 @@
 				84DD89FB1D64973B00E1E4E3 /* Resources */,
 				093AE4B8C2EFF7F887A52701 /* [CP] Embed Pods Frameworks */,
 				E23370650594126E411DD55A /* [CP] Copy Pods Resources */,
+				5B25343BF0AD76E8F71BD895 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -548,6 +579,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5B25343BF0AD76E8F71BD895 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransferTests/Pods-NeonTransferTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770CF2F5728D86A833992E18 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NeonTransfer/Pods-NeonTransfer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7BB617755A702CEBC6A0DEED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -630,21 +691,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A066F1021D68E9300067177A /* MaskView.swift in Sources */,
 				849725C61D6516E40060A7A1 /* Contact.swift in Sources */,
 				E69E27E71D66286000963773 /* ContactCellModelView.swift in Sources */,
 				E6739BC81D679A0A00B00BA4 /* Reachability.swift in Sources */,
+				A0A0821A1D6959C5005A0E82 /* HistoryProtocol.swift in Sources */,
 				E69E27DC1D6626E900963773 /* SendMoneyViewController.swift in Sources */,
 				E69E27EF1D6655D800963773 /* HistoryCellModelView.swift in Sources */,
+				A066F1041D68EE5D0067177A /* Theme.swift in Sources */,
+				A0A082181D695993005A0E82 /* HistoryViewModel.swift in Sources */,
 				E69E27E51D66284C00963773 /* ContactCellProtocol.swift in Sources */,
+				A0A0821C1D695D98005A0E82 /* CustomDate.swift in Sources */,
 				84B19E391D64A153007EC485 /* AppDelegate.swift in Sources */,
 				E69E27EA1D66557A00963773 /* HistoryViewController.swift in Sources */,
 				E69E27F11D6655F200963773 /* HistoryCellProtocol.swift in Sources */,
+				A066F1061D6908900067177A /* CustomAlert.swift in Sources */,
 				849725C01D6510420060A7A1 /* Request.swift in Sources */,
 				848E4D151D651F23001FB6C4 /* HomeViewModel.swift in Sources */,
 				E69E27E01D66271A00963773 /* SendMoneyViewModel.swift in Sources */,
 				E69E27ED1D6655A200963773 /* HistoryCell.swift in Sources */,
 				E69E27E31D66279000963773 /* ContactCell.swift in Sources */,
 				849725C71D6516E40060A7A1 /* TransfersModel.swift in Sources */,
+				A066F1081D69094E0067177A /* ColorWithHexString.swift in Sources */,
 				E60BE5F51D667050004AC04D /* User.swift in Sources */,
 				848E4D131D651F23001FB6C4 /* HomeProtocol.swift in Sources */,
 				848E4D141D651F23001FB6C4 /* HomeViewController.swift in Sources */,

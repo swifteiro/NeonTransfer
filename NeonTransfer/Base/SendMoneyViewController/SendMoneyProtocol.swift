@@ -7,4 +7,10 @@
 //
 
 protocol SendMoneyPresentation {
+    var selectedContact: Contact? { get set }
+    var arrayContacts: [Contact] { get }
+    
+    func sendMoneyWithContactAndValue(count: Int, valueString: String,
+                                      successBlock: (Void -> ()),
+                                      failure failureBlock: (String? -> ()))
 }

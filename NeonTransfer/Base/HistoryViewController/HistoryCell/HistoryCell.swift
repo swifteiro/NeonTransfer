@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class HistoryCell: UITableViewCell {
 
@@ -16,9 +17,15 @@ class HistoryCell: UITableViewCell {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var profileView: UIView!
-    typealias CellProtocol = protocol <HistoryCellPresentation>
     
-    func setupHistoryCell(cellProtocol :CellProtocol) {
-        cellProtocol.setupCellWithContact(self)
+    func setupCell(cellProtocol: HistoryCellPresentation){
+        self.initialLabel.text = cellProtocol.setInitialLabel()
+        self.nameLabel.text = cellProtocol.setCellTitle()
+        self.phoneLabel.text = cellProtocol.setPhoneLabel()
+        self.profileImg.sd_setImageWithURL(NSURL(string: cellProtocol.setImageProfileName()), placeholderImage:UIImage())
+        self.profileView?.circleMask
+        self.profileView.backgroundColor = cellProtocol.setProfieViewBackgroundColor()
+        self.profileView.layer.borderColor = cellProtocol.setProfileViewBorderColor().CGColor
+        self.dateLabel.text = cellProtocol.stringDate
     }
 }

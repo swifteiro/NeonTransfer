@@ -12,14 +12,16 @@ import SVProgressHUD
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrayTransfers :[TransfersModel] = []
+    let historyRepresentaition = HistoryViewModel() as HistoryPresentation
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = ThemeApp.historyScreenTitle
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         self.getTransfers()
-        self.title = "HISTÓRICO DE ENVIOS"
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,7 +36,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.arrayTransfers.count
+        return self.historyRepresentaition.arrayTransfers.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -44,13 +46,14 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        if self.arrayTransfers.count > 0 {
+        if self.historyRepresentaition.arrayTransfers.count > 0 {
             let historyCell = cell as? HistoryCell
-            let transfer :TransfersModel = self.arrayTransfers[indexPath.row]
+            let transfer :TransfersModel = self.historyRepresentaition.arrayTransfers[indexPath.row]
             let contactResult = Contact.objectsWithPredicate(NSPredicate(format: "idContact = %@", transfer.idClient))
             if let contact = contactResult.firstObject() as? Contact {
-                let historyCellViewModel = HistoryCellModelView(contact: contact, transfer: transfer)
-                historyCell?.setupHistoryCell(historyCellViewModel)
+                let historyCellModelView = HistoryCellModelView(contact: contact)
+                historyCellModelView.setDateLabel(transfer.dateTransfer)
+                historyCell?.setupCell(historyCellModelView)
             }
         }
     }
@@ -62,25 +65,19 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: GET TRANSFERS
     func getTransfers() {
         SVProgressHUD.show()
-        Request.requestAPI(["Token" : User.getTokenFromUserDefaults()], callType: .Transfer, successBlock: { (transfers) in
-            if transfers?.count > 0 {
-                SVProgressHUD.dismiss()
-                if let transfersReturn :[TransfersModel] = transfers as? [TransfersModel] {
-                    self.arrayTransfers = transfersReturn
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.tableView.reloadData()
-                    }
-                }
-            }
-        }) { (stringError) in
+        self.historyRepresentaition.getTransfers({ () in
             SVProgressHUD.dismiss()
-            let alert = UIAlertController(title: "NeonTransfer", message: stringError, preferredStyle: UIAlertControllerStyle.Alert)
-            let okAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default) {
-                UIAlertAction in
-                print("OK")
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tableView.reloadData()
             }
-            alert.addAction(okAction)
-            self.presentViewController(alert, animated: true, completion: nil)
+            }) { (stringError) in
+                SVProgressHUD.dismiss()
+                let alert = UIAlertController(title: ThemeApp.alertTitle, message: stringError, preferredStyle: UIAlertControllerStyle.Alert)
+                let okAction = UIAlertAction(title: ThemeApp.alertTitleButtonOk, style: UIAlertActionStyle.Default) {
+                    UIAlertAction in
+                }
+                alert.addAction(okAction)
+                self.presentViewController(alert, animated: true, completion: nil)
         }
     }
 

@@ -15,9 +15,14 @@ class ContactCell: UITableViewCell {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var profileView: UIView!
-    typealias CellProtocol = protocol <ContactCellPresentation>
     
-    func setupCell(cellProtocol :CellProtocol){
-        cellProtocol.setupCellWithContact(self)
+    func setupCell(cellProtocol: ContactCellPresentation){
+        self.initialLabel.text = cellProtocol.setInitialLabel()
+        self.nameLabel.text = cellProtocol.setCellTitle()
+        self.phoneLabel.text = cellProtocol.setPhoneLabel()
+        self.profileImg.image = UIImage(named: cellProtocol.setImageProfileName())
+        self.profileView?.circleMask
+        self.profileView.backgroundColor = cellProtocol.setProfieViewBackgroundColor()
+        self.profileView.layer.borderColor = cellProtocol.setProfileViewBorderColor().CGColor
     }
 }

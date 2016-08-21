@@ -38,6 +38,7 @@ struct Request {
                         case .Token:
                             User.sharedInstance.setUser(["name" : "Vinicius", "email" : "vin.minozzi@gmail.com", "token" : response.result.value ?? "", "picture" : "img_profile"])
                             Contact.jsonParsingFromFile()
+                            successBlock([true])
                             break
                         case .SendMoney:
                             break

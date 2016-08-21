@@ -10,10 +10,10 @@ import UIKit
 
 class User {
     
-    var name :String = ""
-    var email :String = ""
-    var token :String = ""
-    var picture :String = ""
+    var name    = ""
+    var email   = ""
+    var token   = ""
+    var picture = ""
     
     class var sharedInstance: User {
         struct Static {
@@ -25,6 +25,7 @@ class User {
     }
     
     func setUser(dictionary: [String : AnyObject]){
+        // It's from mocked struct, so I'm sure that all properties are String
         User.sharedInstance.name = dictionary["name"] as! String
         User.sharedInstance.email = dictionary["email"] as! String
         User.sharedInstance.token = dictionary["token"] as! String

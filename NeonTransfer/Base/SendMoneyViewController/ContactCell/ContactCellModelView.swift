@@ -14,18 +14,22 @@ class ContactCellModelView: NSObject, ContactCellPresentation {
     
     init(contact: Contact) { self.contact = contact }
     
-    func setupCellWithContact(cell: ContactCell) {
-        cell.nameLabel.text = self.contact?.name
-        cell.phoneLabel.text = self.contact?.phone
-        cell.profileView?.circleMask
-        cell.profileView.layer.borderColor = UIColor.init(red: 21/255, green: 153/255, blue: 218/255, alpha: 1).CGColor
-        cell.profileView.backgroundColor = UIColor.clearColor()
-        cell.backgroundColor = UIColor.clearColor()
-        
+    func setCellTitle() -> String { return self.contact?.name ?? "" }
+    
+    func setPhoneLabel() -> String { return self.contact?.phone ?? "" }
+    
+    func setProfileViewBorderColor() -> UIColor {return ThemeApp.profileBorderImageColor }
+    
+    func setProfieViewBackgroundColor() -> UIColor { return ThemeApp.profileViewCellBackgroundColor }
+    
+    func setInitialLabel() -> String {
         if let name = self.contact?.name.componentsSeparatedByString(" ") {
             var initailString = ""
             for string in name { initailString = initailString + String(string.characters.first!) }
-            cell.initialLabel.text = initailString
+            return initailString
         }
+        return ""
     }
+    
+    func setImageProfileName() -> String { return self.contact?.picture ?? ""}
 }

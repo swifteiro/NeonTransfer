@@ -9,9 +9,9 @@
 import UIKit
 
 protocol HomePresentation {
-    
-    func setBackgraoundColor(color: UIColor, view: HomeViewController)
-    func setupViewProfile(color: UIColor, view: UIView)
-    func setupImageViewProfile(img: UIImageView)
-    func setupButtonHome(button: UIButton, title: String, textColor: UIColor)
+    func setBackgroundColor() -> UIColor
+    func setupViewProfile() -> UIColor
+    func setupImageViewProfile() -> String
+    func setupButtonsHome() -> (String, String, UIColor, CGFloat)
+    func getToken(failure failureBlock : (String? -> ()))
 }

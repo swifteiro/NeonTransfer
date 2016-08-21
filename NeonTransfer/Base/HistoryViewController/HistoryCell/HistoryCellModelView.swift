@@ -10,43 +10,36 @@ import UIKit
 
 class HistoryCellModelView: NSObject, HistoryCellPresentation {
     
-    var contact :Contact?
-    var transfer: TransfersModel?
+    var stringDate = ""
+    var contact: Contact?
     
-    init(contact: Contact, transfer: TransfersModel) {
-        self.contact = contact
-        self.transfer = transfer
-    }
+    init(contact: Contact) { self.contact = contact }
     
-    func setupCellWithContact(cell: HistoryCell) {
-        cell.nameLabel.text = self.contact?.name
-        cell.phoneLabel.text = self.contact?.phone
-        cell.profileView?.circleMask
-        cell.profileView.layer.borderColor = UIColor.init(red: 21/255, green: 153/255, blue: 218/255, alpha: 1).CGColor
-        cell.profileView.backgroundColor = UIColor.clearColor()
-        cell.backgroundColor = UIColor.clearColor()
-        
-        guard let createdDateString = self.transfer?.dateTransfer else {
-            return
-        }
-        let dateFormatter = NSDateFormatter()
-        let createdDate = dateFormatter.dateFromTransferString(createdDateString)
-        dateFormatter.dateFormat = "dd 'de' MMMM 'de' yyyy', às' HH'h'mm"
-        cell.dateLabel.text = dateFormatter.stringFromDate(createdDate!)
-        
+    func setCellTitle() -> String { return self.contact?.name ?? "" }
+    
+    func setPhoneLabel() -> String { return self.contact?.phone ?? "" }
+    
+    func setProfileViewBorderColor() -> UIColor {return ThemeApp.profileBorderImageColor }
+    
+    func setProfieViewBackgroundColor() -> UIColor { return ThemeApp.profileViewCellBackgroundColor }
+    
+    func setInitialLabel() -> String {
         if let name = self.contact?.name.componentsSeparatedByString(" ") {
             var initailString = ""
             for string in name { initailString = initailString + String(string.characters.first!) }
-            cell.initialLabel.text = initailString
+            return initailString
         }
+        return ""
     }
-}
-
-extension NSDateFormatter {
-    func dateFromTransferString(dateString: String) -> NSDate? {
-        self.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SS"
-        self.timeZone = NSTimeZone(abbreviation: "UTC")
-        self.locale = NSLocale(localeIdentifier: "pt_BR")
-        return self.dateFromString(dateString)
+    
+    func setImageProfileName() -> String { return self.contact?.picture ?? ""}
+    
+    func setDateLabel(stringDate: String?) {
+        guard let createdDateString = stringDate else { return }
+        let dateFormatter = NSDateFormatter()
+        if let createdDate = dateFormatter.dateFromTransferString(createdDateString) {
+            dateFormatter.dateFormat = "dd 'de' MMMM 'de' yyyy', às' HH'h'mm"
+            self.stringDate = dateFormatter.stringFromDate(createdDate)
+        }
     }
 }
